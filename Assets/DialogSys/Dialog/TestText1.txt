@@ -1,0 +1,9 @@
+&c1_on
+&d1_on
+d1:hello! This is Test dialog 1
+&wait
+&c2_on
+&d2_on
+d2:hello!hello!
+&wait
+&end

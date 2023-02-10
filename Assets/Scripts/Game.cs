@@ -11,7 +11,7 @@ public class Game : MonoBehaviour
     public string currentStatus = "undefine";
 
     [Header("TextAsset")]
-    public TextAsset[] textFile = new TextAsset[1];
+    public TextAsset[] textFile = new TextAsset[2];
     public TextAsset currentTextFile;
 
     void Awake()
@@ -20,10 +20,20 @@ public class Game : MonoBehaviour
         currentTextFile = textFile[0];
     }
 
-    public void changeCurrentStatus(string status)
+    public void changeCurrentTextFile()
     {
-        currentStatus = status;
-    }
+        switch (currentStatus)
+        {
+            case "test1":
+                currentTextFile = textFile[0];
+                break;
+            case "test2":
+                currentTextFile = textFile[1];
+                break;
 
+            default:
+                break;
+        }
+    }
 
 }

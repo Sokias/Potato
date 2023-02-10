@@ -1,0 +1,22 @@
+&c1_on
+&d1_on
+d1:hello! This is Test dialog 2
+&wait
+&c2_on
+&d2_on
+d2:hello!hello! Next you will disappear
+&wait
+&c1_off
+d1:wow!You really made that
+&wait
+d2:you can come back now
+&wait
+&c1_on
+d1:there will be a system dialog box next
+&wait
+&d1_off
+&d2_off
+&db_on
+db:Here I am, press to end
+&wait
+&end
