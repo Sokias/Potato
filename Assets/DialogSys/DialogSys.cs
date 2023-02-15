@@ -58,13 +58,13 @@ public class DialogSys : MonoBehaviour
     void displayNext()
     {
         var status = false;
-        //delete the empty char at the end ¡ý
-        switch (textList[index].Substring(0, textList[index].Length - 1))
+        //delete the empty char at the end ï¿½ï¿½ Windows Only!
+        switch (textList[index])//.Substring(0, textList[index].Length - 1))
         {
             case "&wait":
                 status = true;
                 break;
-            case "&en":
+            case "&end": //on windows change it to &en
                 dialogEnd();
                 break;
 
