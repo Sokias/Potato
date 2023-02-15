@@ -6,6 +6,9 @@ using TMPro;
 
 public class DialogSys : MonoBehaviour
 {
+    [Header("TextFIles")]
+    public TextAsset[] textFile = new TextAsset[2];
+
     [Header("TextObjects")]
     public TMP_Text textLabel1;
     public TMP_Text textLabel2;
@@ -18,19 +21,21 @@ public class DialogSys : MonoBehaviour
     public GameObject Dialog2;
     public GameObject DialogB;
 
-    public int index;
-    public List<string> textList = new List<string>();
+    int index;
+    TextAsset currentTextFile;
+    List<string> textList = new List<string>();
 
     private void OnEnable()
     {
         index = 0;
-        GetTextFromFile(Game.Control.currentTextFile);
+        setCurrentTextFile();
+        GetTextFromFile(currentTextFile);
         displayNext();
     }
 
-    private void OnDisable()
+    private void OnDisable() 
     {
-        index = 0;
+        dialogEnd();
     }
 
     void Update()
@@ -39,6 +44,22 @@ public class DialogSys : MonoBehaviour
         {
             index++;
             displayNext();
+        }
+    }
+
+    public void setCurrentTextFile()
+    {
+        switch (Game.Control.currentStatus)
+        {
+            case "test1":
+                currentTextFile = textFile[0];
+                break;
+            case "test2":
+                currentTextFile = textFile[1];
+                break;
+
+            default:
+                break;
         }
     }
 
@@ -58,8 +79,8 @@ public class DialogSys : MonoBehaviour
     void displayNext()
     {
         var status = false;
-        //delete the empty char at the end �� Windows Only!
-        switch (textList[index])//.Substring(0, textList[index].Length - 1))
+        //delete the empty char at the end / Windows Only!
+        switch (textList[index])//.Substring(0, textList[index].Length - 1)) //windows only
         {
             case "&wait":
                 status = true;

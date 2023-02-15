@@ -594,6 +594,14 @@ PrefabInstance:
       propertyPath: textLabelB
       value: 
       objectReference: {fileID: 919166889}
+    - target: {fileID: 3351981398978453875, guid: a35b92160f87d724aab3225c272b6e20, type: 3}
+      propertyPath: textFile.Array.data[0]
+      value: 
+      objectReference: {fileID: 4900000, guid: 611103249717d2c4aa967ffbd8ffcc0f, type: 3}
+    - target: {fileID: 3351981398978453875, guid: a35b92160f87d724aab3225c272b6e20, type: 3}
+      propertyPath: textFile.Array.data[1]
+      value: 
+      objectReference: {fileID: 4900000, guid: 66da885a38c672044825ebde0e333243, type: 3}
     - target: {fileID: 3513302883580031414, guid: a35b92160f87d724aab3225c272b6e20, type: 3}
       propertyPath: m_IsActive
       value: 0
