@@ -6,24 +6,28 @@ using TMPro;
 
 public class DialogSys : MonoBehaviour
 {
-    [Header("TextFIles")]
+    [Header("TextFiles")]
     public TextAsset[] textFile = new TextAsset[2];
 
     [Header("TextObjects")]
     public TMP_Text textLabel1;
     public TMP_Text textLabel2;
     public TMP_Text textLabelB;
+    public TMP_Text choiceTextLabel1;
+    public TMP_Text choiceTextLabel2;
+    public TMP_Text choiceTextLabel3;
 
     [Header("GameObjects")]
-    public GameObject Character1;
-    public GameObject Character2;
-    public GameObject Dialog1;
-    public GameObject Dialog2;
-    public GameObject DialogB;
+    public GameObject Character1, Character2;
+    public GameObject Dialog1, Dialog2, DialogB;
+    public GameObject DialogChoice;
+    public GameObject[] Pointer = new GameObject[3];
 
     int index;
     TextAsset currentTextFile;
     List<string> textList = new List<string>();
+    bool choiceON = false;
+    int currentChoice = 0;
 
     private void OnEnable()
     {
@@ -33,17 +37,42 @@ public class DialogSys : MonoBehaviour
         displayNext();
     }
 
-    private void OnDisable() 
+    private void OnDisable()
     {
         dialogEnd();
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && !choiceON)
         {
             index++;
             displayNext();
+        }
+
+        if (choiceON)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                if (currentChoice == 0) { return; }
+                choiceOff();
+            }
+
+            if (Input.GetKeyDown(KeyCode.S))
+            {
+                currentChoice += 1;
+                if (currentChoice > 3) { currentChoice = 1; }
+                Pointer[0].SetActive(false); Pointer[1].SetActive(false); Pointer[2].SetActive(false);
+                Pointer[currentChoice - 1].SetActive(true);
+            }
+            if (Input.GetKeyDown(KeyCode.W))
+            {
+                currentChoice -= 1;
+                if (currentChoice < 1) { currentChoice = 3; }
+                Pointer[0].SetActive(false); Pointer[1].SetActive(false); Pointer[2].SetActive(false);
+                Pointer[currentChoice - 1].SetActive(true);
+            }
+
         }
     }
 
@@ -120,6 +149,14 @@ public class DialogSys : MonoBehaviour
                 DialogB.SetActive(false);
                 break;
 
+            case "&choice_on":
+                choiceOn();
+                status = true;
+                break;
+            case "&save_choice":
+                Game.Control.savedAnswer = currentChoice;
+                break;
+
             default:
                 var line = textList[index].Split(':');
                 switch (line[0])
@@ -133,6 +170,32 @@ public class DialogSys : MonoBehaviour
                     case "db":
                         textLabelB.SetText(line[1]);
                         break;
+                    case "c1":
+                        choiceTextLabel1.SetText(line[1]);
+                        break;
+                    case "c2":
+                        choiceTextLabel2.SetText(line[1]);
+                        break;
+                    case "c3":
+                        choiceTextLabel3.SetText(line[1]);
+                        break;
+                    case "d2_choice_ans":
+                        switch (currentChoice)
+                        {
+                            case 0:
+                                textLabel2.SetText(line[1]);
+                                break;
+                            case 1:
+                                textLabel2.SetText(line[2]);
+                                break;
+                            case 2:
+                                textLabel2.SetText(line[3]);
+                                break;
+                            case 3:
+                                textLabel2.SetText(line[4]);
+                                break;
+                        }
+                        break;
                 }
                 break;
         }
@@ -143,6 +206,24 @@ public class DialogSys : MonoBehaviour
 
     }
 
+    void choiceOn()
+    {
+        Dialog1.SetActive(false);
+        textLabel1.SetText("");
+        currentChoice = 0;
+        Pointer[0].SetActive(false); Pointer[1].SetActive(false); Pointer[2].SetActive(false);
+        DialogChoice.SetActive(true);
+        choiceON = true;
+    }
+
+    void choiceOff()
+    {
+        DialogChoice.SetActive(false);
+        choiceON = false;
+        index++;
+        displayNext();
+    }
+
     void dialogEnd()
     {
         index = 0;
@@ -151,6 +232,7 @@ public class DialogSys : MonoBehaviour
         Dialog1.SetActive(false);
         Dialog2.SetActive(false);
         DialogB.SetActive(false);
+        DialogChoice.SetActive(false);
         gameObject.SetActive(false);
         return;
     }
@@ -169,6 +251,12 @@ public class DialogSys : MonoBehaviour
      * d1:[content]
      * d2:[content]
      * db:[content]
+     * c1:[content]
+     * c2:[content]
+     * c3:[content]
+     * &choice_on
+     * &save_choice
+     * d2_choice_ans:[ans0]:[ans1]:[ans2]:[ans3]
      * &wait
      * &end
      */

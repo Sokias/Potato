@@ -10,9 +10,18 @@ public class Game : MonoBehaviour
     [Header("FlowControl")]
     public string currentStatus = "undefine";
 
+    [Header("DialogSys")]
+    public GameObject dialogSys;
+    public int savedAnswer = -1;
+
     void Awake()
     {
         Control = this;
     }
 
+    public void startDialog(string status)
+    {
+        currentStatus = status;
+        dialogSys.SetActive(true);
+    }
 }

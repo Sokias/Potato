@@ -17,6 +17,19 @@ d1:there will be a system dialog box next
 &d1_off
 &d2_off
 &db_on
-db:Here I am, press to end
+db:Here I am, press to open choice
+&wait
+&d2_on
+&db_off
+d2:choose your answer!
+&wait
+c1:answer 1
+c2:answer 2
+c3:answer 3
+&choice_on
+d2_choice_ans:you didn't choose:you choose ans 1:you choose ans 2:you choose ans 3
+&wait
+&d1_on
+d1:yes your are right
 &wait
 &end

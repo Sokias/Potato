@@ -15,15 +15,11 @@ public class DialogSysTest : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            Game.Control.currentStatus = "test1";
-            Game.Control.changeCurrentTextFile();
-            DSys.SetActive(true);
+            Game.Control.startDialog("test1");
         }
         if (Input.GetKeyDown(KeyCode.F))
         {
-            Game.Control.currentStatus = "test2";
-            Game.Control.changeCurrentTextFile();
-            DSys.SetActive(true);
+            Game.Control.startDialog("test2");
         }
     }
 }
