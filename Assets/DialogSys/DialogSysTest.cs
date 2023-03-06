@@ -15,11 +15,11 @@ public class DialogSysTest : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            Game.Control.startDialog("test1");
+            Game.Control.startDialog("1-1");
         }
         if (Input.GetKeyDown(KeyCode.F))
         {
-            Game.Control.startDialog("test2");
+            Game.Control.startDialog("0-1");
         }
     }
 }

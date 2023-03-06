@@ -7,7 +7,7 @@ using TMPro;
 public class DialogSys : MonoBehaviour
 {
     [Header("TextFiles")]
-    public TextAsset[] textFile = new TextAsset[2];
+    public TextAsset[] textFile = new TextAsset[4];
 
     [Header("TextObjects")]
     public TMP_Text textLabel1;
@@ -25,21 +25,23 @@ public class DialogSys : MonoBehaviour
 
     int index;
     TextAsset currentTextFile;
-    List<string> textList = new List<string>();
+    public List<string> textList = new List<string>();
     bool choiceON = false;
     int currentChoice = 0;
 
     private void OnEnable()
     {
         index = 0;
+        Character1.SetActive(false);
+        Character2.SetActive(false);
+        Dialog1.SetActive(false);
+        Dialog2.SetActive(false);
+        DialogB.SetActive(false);
+        DialogChoice.SetActive(false);
+
         setCurrentTextFile();
         GetTextFromFile(currentTextFile);
         displayNext();
-    }
-
-    private void OnDisable()
-    {
-        dialogEnd();
     }
 
     void Update()
@@ -86,6 +88,12 @@ public class DialogSys : MonoBehaviour
             case "test2":
                 currentTextFile = textFile[1];
                 break;
+            case "0-1":
+                currentTextFile = textFile[2];
+                break;
+            case "1-1":
+                currentTextFile = textFile[3];
+                break;
 
             default:
                 break;
@@ -116,6 +124,7 @@ public class DialogSys : MonoBehaviour
                 break;
             case "&end": //on windows change it to &en
                 dialogEnd();
+                //gameObject.SetActive(false);
                 break;
 
             case "&c1_on":
@@ -234,7 +243,6 @@ public class DialogSys : MonoBehaviour
         DialogB.SetActive(false);
         DialogChoice.SetActive(false);
         gameObject.SetActive(false);
-        return;
     }
 
     /** ControlReference

@@ -1,0 +1,11 @@
+&d2_on
+&c2_on
+d2:I once had a dream, this dream has been planted when I just sprouted
+&wait
+d2:when my potato predecessor told me that the ultimate goal of our potato birth is to pass the potato quality test to become the best McDonald's potatoes...
+&wait
+d2:But I finally failed to fulfill that wish, although I failed
+&wait
+d2:you still have the hope that you can carry my dream to become the chosen potato.
+&wait
+&end

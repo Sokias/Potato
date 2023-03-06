@@ -1,0 +1,17 @@
+&db_on
+&d1_on
+db:Not so long ago, in a potato plantation
+&wait
+db:The harvest season had just ended and a batch of potatoes were selected to be planted as seeds
+&wait
+db:They were trying to absorb water and nutrients, preparing for germination...
+&wait
+db:Next spring, the snow and ice will melt...
+&wait
+db:This batch of potatoes is ready, in this season of recovery, you are born...
+&wait
+db:You are a potato.
+&wait
+db:One of the thousands of potatoes in the potato plantation...
+&wait
+&end
