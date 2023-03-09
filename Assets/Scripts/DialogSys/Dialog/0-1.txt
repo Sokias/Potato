@@ -1,5 +1,6 @@
 &db_on
-&d1_on
+db:(PRESS SPACE TO START)
+&wait
 db:Not so long ago, in a potato plantation
 &wait
 db:The harvest season had just ended and a batch of potatoes were selected to be planted as seeds

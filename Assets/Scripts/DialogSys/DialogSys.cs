@@ -7,7 +7,7 @@ using TMPro;
 public class DialogSys : MonoBehaviour
 {
     [Header("TextFiles")]
-    public TextAsset[] textFile = new TextAsset[4];
+    public TextAsset[] textFile = new TextAsset[5];
 
     [Header("TextObjects")]
     public TMP_Text textLabel1;
@@ -42,6 +42,11 @@ public class DialogSys : MonoBehaviour
         setCurrentTextFile();
         GetTextFromFile(currentTextFile);
         displayNext();
+    }
+
+    private void OnDisable()
+    {
+        Game.Control.startNext();
     }
 
     void Update()
@@ -93,6 +98,9 @@ public class DialogSys : MonoBehaviour
                 break;
             case "1-1":
                 currentTextFile = textFile[3];
+                break;
+            case "1-2":
+                currentTextFile = textFile[4];
                 break;
 
             default:

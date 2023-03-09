@@ -1,0 +1,14 @@
+&d2_on
+&c2_on
+d2:How about that? Do you have any questions?
+&wait
+&c1_on
+c1:Why do you want to become a McDonald's potato?
+c2:How to become a McDonald's potato?
+c3:I have no more questions.
+&choice_on
+d2_choice_ans:[NO_ANS_0]:Becoming a McDonald's potato is the ultimate goal of the potatoes.:You need to work hard to collect water and nutrients in the following days, make yourself big enough and keep your appearance smooth and full enough:Good.
+&wait
+d2_choice_ans:[NO_ANS_0]:This is a representation of the highest standards of quality.:Then finally pass the potato quality test to be selected as a glorious McDonald's potato.:(Old potato smiled)
+&wait
+&end

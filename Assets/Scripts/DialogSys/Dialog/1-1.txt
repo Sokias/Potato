@@ -4,8 +4,15 @@ d2:I once had a dream, this dream has been planted when I just sprouted
 &wait
 d2:when my potato predecessor told me that the ultimate goal of our potato birth is to pass the potato quality test to become the best McDonald's potatoes...
 &wait
-d2:But I finally failed to fulfill that wish, although I failed
+d2:In the end I failed to fulfill that wish
 &wait
-d2:you still have the hope that you can carry my dream to become the chosen potato.
+d2:but you still can carry my dream to become the chosen potato.
+&wait
+&d2_off
+&c2_off
+&db_on
+db:(TODO-Explain the game system and the conditions to become a MCDONALD POTATO)
+&wait
+db:(TODO-Add first mini-game)
 &wait
 &end

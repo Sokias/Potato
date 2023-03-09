@@ -148,7 +148,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: C2. 222
+  m_text: How to become a McDonald's potato?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -234,7 +234,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1131742081
 RectTransform:
   m_ObjectHideFlags: 0
@@ -359,7 +359,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: C1. 111
+  m_text: Why do you want to become a McDonald's potato?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -570,7 +570,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: C3. 333
+  m_text: I have no more questions.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -732,7 +732,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6126467235327311054
 RectTransform:
   m_ObjectHideFlags: 0
@@ -857,7 +857,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ' '
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1097,7 +1097,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &321914330858831050
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1333,6 +1333,7 @@ MonoBehaviour:
   - {fileID: 4900000, guid: 66da885a38c672044825ebde0e333243, type: 3}
   - {fileID: 4900000, guid: 1e5b1d15fae824fa284c60c884a5f5b6, type: 3}
   - {fileID: 4900000, guid: 794c1743c81514cf2ba6ff63892c7765, type: 3}
+  - {fileID: 4900000, guid: b9fe19ca97f10423d8febe8817d00637, type: 3}
   textLabel1: {fileID: 1080296554486041704}
   textLabel2: {fileID: 4329612030074813430}
   textLabelB: {fileID: 1634965414244949314}
@@ -1349,6 +1350,44 @@ MonoBehaviour:
   - {fileID: 2013604084}
   - {fileID: 1131742080}
   - {fileID: 1491440919}
+  textList:
+  - '&d2_on'
+  - '&c2_on'
+  - d2:I once had a dream, this dream has been planted when I just sprouted
+  - '&wait'
+  - d2:when my potato predecessor told me that the ultimate goal of our potato birth
+    is to pass the potato quality test to become the best McDonald's potatoes...
+  - '&wait'
+  - d2:In the end I failed to fulfill that wish
+  - '&wait'
+  - d2:but you still can carry my dream to become the chosen potato.
+  - '&wait'
+  - '&d2_off'
+  - '&c2_off'
+  - '&db_on'
+  - db:(TODO-Explain the game system and the conditions to become a MCDONALD POTATO)
+  - '&wait'
+  - db:(TODO-Add first mini-game)
+  - '&wait'
+  - '&db_off'
+  - '&d2_on'
+  - '&c2_on'
+  - d2:How about that? Do you have any questions?
+  - '&wait'
+  - '&c1_on'
+  - c1:Why do you want to become a McDonald's potato?
+  - c2:How to become a McDonald's potato?
+  - c3:I have no more questions.
+  - '&choice_on'
+  - d2_choice_ans:[NO_ANS_0]:Becoming a McDonald's potato is the ultimate goal of
+    the potatoes.:You need to work hard to collect water and nutrients in the following
+    days, make yourself big enough and keep your appearance smooth and full enough:Good.
+  - '&wait'
+  - d2_choice_ans:[NO_ANS_0]:This is a representation of the highest standards of
+    quality.:Then finally pass the potato quality test to be selected as a glorious
+    McDonald's potato.:(Old potato smiled)
+  - '&wait'
+  - '&end'
 --- !u!1 &6177067920293247468
 GameObject:
   m_ObjectHideFlags: 0
@@ -1415,7 +1454,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: I once had a dream, this dream has been planted when I just sprouted
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1550,7 +1589,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ' '
+  m_text: (TODO-Add first mini-game)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
