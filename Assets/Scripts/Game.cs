@@ -10,12 +10,19 @@ public class Game : MonoBehaviour
     [Header("FlowControl")]
     public string currentStatus = "undefine";
 
+    [Header("PlayerStatus")]
+    public int Score_water = 0;
+    public int Score_health = 100;
+    public int Score_nutrition = 0;
+
     [Header("DialogSys")]
     public GameObject dialogSys;
     public int savedAnswer = -1;
 
-    [Header("GameSystem")]
+    [Header("GameSys")]
+    public bool canControl = false;
     public GameObject gameSys_01;
+
 
     private void Awake()
     {
