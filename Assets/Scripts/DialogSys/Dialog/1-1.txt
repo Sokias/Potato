@@ -3,16 +3,32 @@
 &c1_on
 d2:I once had a dream, this dream has been planted when I just sprouted
 &wait
-d2:when my potato predecessor told me that the ultimate goal of our potato birth is to pass the potato quality test to become the best McDonald's potatoes...
+d2:when my potato predecessor told me that the ultimate goal of our potato's life is to pass the potato quality test to become the best McDonald's potatoes...
 &wait
 d2:In the end I failed to fulfill that wish
 &wait
 d2:but you still can carry my dream to become the chosen potato.
 &wait
+d2:Don't worry, I'll teach you everything you need to know.
+&wait
+d2:First you have to learn to get water.
+&wait
+d2:Water is very important, it's the origin of the life.
+&wait
+d2:So listen carefully...
+&wait
 &d2_off
 &c2_off
 &c1_off
 &db_on
-db:(TODO-Explain the game system and the conditions to become a MCDONALD POTATO)
+db:As a potato, water is essential for growth.
+&wait
+db:You will go through a mini-game to collect water.
+&wait
+db:You can move yourself by using [A/D] or the [←/→] key.
+&wait
+db:Get the falling water by moving under it!
+&wait
+db:I hope you got it, let's try it out!
 &wait
 &end

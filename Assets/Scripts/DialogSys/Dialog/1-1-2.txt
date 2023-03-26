@@ -1,0 +1,26 @@
+&d2_on
+&c2_on
+&c1_on
+d2:Good, good.
+&wait
+d2:In addition to water, it's also very important to get nutrition from the sun.
+&wait
+d2:Don't worry, it's even easier than getting water.
+&wait
+d2:You just need to keep your body under the sunshine.
+&wait
+&d2_off
+&c2_off
+&c1_off
+&db_on
+db:Just like the water mini-game
+&wait
+db:You will go through another mini-game to get nutrition.
+&wait
+db:You can move yourself by using [A/D] or the [←/→] key.
+&wait
+db:Stay in the sunshine to get the nutrition!
+&wait
+db:Ready? Let's go!
+&wait
+&end
