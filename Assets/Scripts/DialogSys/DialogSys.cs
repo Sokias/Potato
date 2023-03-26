@@ -7,7 +7,7 @@ using TMPro;
 public class DialogSys : MonoBehaviour
 {
     [Header("TextFiles")]
-    public TextAsset[] textFile = new TextAsset[5];
+    public TextAsset[] textFile = new TextAsset[6];
 
     [Header("TextObjects")]
     public TMP_Text textLabel1;
@@ -65,14 +65,14 @@ public class DialogSys : MonoBehaviour
                 choiceOff();
             }
 
-            if (Input.GetKeyDown(KeyCode.S))
+            if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
             {
                 currentChoice += 1;
                 if (currentChoice > 3) { currentChoice = 1; }
                 Pointer[0].SetActive(false); Pointer[1].SetActive(false); Pointer[2].SetActive(false);
                 Pointer[currentChoice - 1].SetActive(true);
             }
-            if (Input.GetKeyDown(KeyCode.W))
+            if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
             {
                 currentChoice -= 1;
                 if (currentChoice < 1) { currentChoice = 3; }
@@ -99,8 +99,11 @@ public class DialogSys : MonoBehaviour
             case "1-1":
                 currentTextFile = textFile[3];
                 break;
-            case "1-2":
+            case "1-1-2":
                 currentTextFile = textFile[4];
+                break;
+            case "1-2":
+                currentTextFile = textFile[5];
                 break;
 
             default:

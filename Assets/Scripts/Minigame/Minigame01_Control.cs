@@ -11,6 +11,7 @@ public class Minigame01_Control : MonoBehaviour
     public TMP_Text T_water;
 
     public GameObject Water_Prefab;
+    public GameObject player;
 
     float timeUntilNextWater = 0f;
 
@@ -33,8 +34,13 @@ public class Minigame01_Control : MonoBehaviour
         {
             timeUntilNextWater = 0f;
             Instantiate(Water_Prefab,
-                        new Vector3(Random.Range(-3.3f, 3.3f), 3.3f),
+                        new Vector3(Random.Range(-8.4f, 8.4f), 3.3f),
                         Quaternion.identity,this.transform);
+            if (Random.Range(0f, 2f) > 1.3f) {
+                Instantiate(Water_Prefab,
+                            new Vector3(Random.Range(-8.4f, 8.4f), 3.3f),
+                            Quaternion.identity, this.transform);
+            }
         }
 
     }
@@ -42,6 +48,9 @@ public class Minigame01_Control : MonoBehaviour
     private void OnEnable()
     {
         Game.Control.canControl = true;
+        timer = 30f;
+        timeUntilNextWater = 0f;
+        player.transform.position = new Vector2(0, -2);
     }
 
     private void OnDisable()

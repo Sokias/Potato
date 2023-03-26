@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.PlasticSCM.Editor.WebApi;
+//using Unity.PlasticSCM.Editor.WebApi;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class Game : MonoBehaviour
 {
@@ -13,7 +14,7 @@ public class Game : MonoBehaviour
     [Header("PlayerStatus")]
     public int Score_water = 0;
     public int Score_health = 100;
-    public int Score_nutrition = 0;
+    public float Score_nutrition = 0;
 
     [Header("DialogSys")]
     public GameObject dialogSys;
@@ -22,6 +23,9 @@ public class Game : MonoBehaviour
     [Header("GameSys")]
     public bool canControl = false;
     public GameObject gameSys_01;
+    public GameObject gameSys_02;
+
+    public Light2D GlobalLight;
 
 
     private void Awake()
@@ -32,6 +36,10 @@ public class Game : MonoBehaviour
     private void Start()
     {
         startDialog("0-1");
+
+        //test
+        //startDialog("1-1-2");
+        //startGame("1-1-2G", 2);
     }
 
     public void startDialog(string status)
@@ -47,6 +55,9 @@ public class Game : MonoBehaviour
         {
             case 1:
                 gameSys_01.SetActive(true);
+                break;
+            case 2:
+                gameSys_02.SetActive(true);
                 break;
 
             default:
@@ -74,12 +85,18 @@ public class Game : MonoBehaviour
                 startGame("1-1G",1);
                 break;
             case "1-1G":
+                startDialog("1-1-2");
+                break;
+            case "1-1-2":
+                startGame("1-1-2G", 2);
+                break;
+            case "1-1-2G":
                 startDialog("1-2");
                 break;
 
 
             default:
-                Debug.Log("startNext_Status_ERROR");
+                Debug.Log("ERROR_startNext_Status_Undefine");
                 break;
         }
     }

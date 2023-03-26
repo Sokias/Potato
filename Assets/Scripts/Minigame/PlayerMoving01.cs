@@ -19,33 +19,33 @@ public class PlayerMoving01 : MonoBehaviour
         if (Game.Control.canControl)
         {
             //Move
-            if (Input.GetKeyDown(KeyCode.D))
+            if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
                 {
                     rb2d.velocity = new Vector2(speed, 0);
                 }
-            if (Input.GetKeyDown(KeyCode.A))
+            if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
                 {
                     rb2d.velocity = new Vector2(-speed, 0);
                 }
-            if (Input.GetKeyUp(KeyCode.A))
+            if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.LeftArrow))
                 {
                     rb2d.velocity = new Vector2(0, 0);
                 }
-            if (Input.GetKeyUp(KeyCode.D))
+            if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.RightArrow))
                 {
                     rb2d.velocity = new Vector2(0, 0);
                 }
 
             //position check
-            if (transform.position.x > 3.26)
+            if (transform.position.x > 8.41)
             {
                 rb2d.velocity = new Vector2(0, 0);
-                transform.position = new Vector2(3.25f, -2f);
+                transform.position = new Vector2(8.4f, -2f);
             }
-            if (transform.position.x < -3.26)
+            if (transform.position.x < -8.41)
             {
                 rb2d.velocity = new Vector2(0, 0);
-                transform.position = new Vector2(-3.25f, -2f);
+                transform.position = new Vector2(-8.4f, -2f);
             }
 
         }
