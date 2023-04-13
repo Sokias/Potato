@@ -1,9 +1,16 @@
+&blackin
+&delay:1
+&bg_update:2
+&blackout
+&delay:1
 &d2_on
 &c2_on
 &c1_on
 d2:I once had a dream, this dream has been planted when I just sprouted
 &wait
-d2:when my potato predecessor told me that the ultimate goal of our potato's life is to pass the potato quality test to become the best McDonald's potatoes...
+d2:when my potato predecessor told me that the ultimate goal of our potato's life
+&wait
+d2:is to pass the potato quality test to become the best McDonald's potatoes...
 &wait
 d2:In the end I failed to fulfill that wish
 &wait

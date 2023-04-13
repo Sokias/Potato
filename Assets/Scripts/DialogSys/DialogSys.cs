@@ -177,10 +177,25 @@ public class DialogSys : MonoBehaviour
                 Game.Control.savedAnswer = currentChoice;
                 break;
 
+            case "&blackin":
+                Game.Control.blackin();
+                break;
+            case "&blackout":
+                Game.Control.blackout();
+                break;
+
             default:
                 var line = textList[index].Split(':');
                 switch (line[0])
                 {
+                    case "&bg_update":
+                        Game.Control.updateBG(int.Parse(line[1]));
+                        break;
+                    case "&delay":
+                        StartCoroutine(delay(int.Parse(line[1])));
+                        status = true;
+                        break;
+
                     case "d1":
                         textLabel1.SetText(line[1]);
                         break;
@@ -256,6 +271,14 @@ public class DialogSys : MonoBehaviour
         gameObject.SetActive(false);
     }
 
+    IEnumerator delay(int time)
+    {
+        yield return new WaitForSeconds(time);
+
+        index++;
+        displayNext();
+    }
+
     /** ControlReference
      * &c1_on
      * &c1_off
@@ -277,6 +300,10 @@ public class DialogSys : MonoBehaviour
      * &save_choice
      * d2_choice_ans:[ans0]:[ans1]:[ans2]:[ans3]
      * &wait
+     * &delay:[time(s)]
+     * &blackin
+     * &blackout
+     * &bg_update:[index]
      * &end
      */
 

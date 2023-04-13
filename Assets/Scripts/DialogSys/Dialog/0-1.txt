@@ -1,6 +1,8 @@
 &db_on
 db:(PRESS SPACE TO START)
 &wait
+&blackout
+&delay:1
 db:Not so long ago, in a potato plantation
 &wait
 db:The harvest season had just ended and a batch of potatoes were selected to be planted as seeds

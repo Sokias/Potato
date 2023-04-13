@@ -25,7 +25,11 @@ public class Game : MonoBehaviour
     public GameObject gameSys_01;
     public GameObject gameSys_02;
 
+    [Header("GameObject")]
     public Light2D GlobalLight;
+    public GameObject background;
+    public Sprite[] backgroundSprite = new Sprite[9];
+    public GameObject blackScreen;
 
 
     private void Awake()
@@ -99,6 +103,21 @@ public class Game : MonoBehaviour
                 Debug.Log("ERROR_startNext_Status_Undefine");
                 break;
         }
+    }
+
+    public void updateBG(int bg_index)
+    {
+        background.GetComponent<SpriteRenderer>().sprite = backgroundSprite[bg_index-1];
+    }
+
+    public void blackin()
+    {
+        blackScreen.GetComponent<Animator>().SetTrigger("blackin");
+    }
+
+    public void blackout()
+    {
+        blackScreen.GetComponent<Animator>().SetTrigger("blackout");
     }
 
 }
