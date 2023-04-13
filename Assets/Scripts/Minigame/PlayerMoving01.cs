@@ -19,11 +19,11 @@ public class PlayerMoving01 : MonoBehaviour
         if (Game.Control.canControl)
         {
             //Move
-            if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
+            if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
                 {
                     rb2d.velocity = new Vector2(speed, 0);
                 }
-            if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
+            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
                 {
                     rb2d.velocity = new Vector2(-speed, 0);
                 }
