@@ -1,0 +1,10 @@
+&blackin
+&delay:1
+&blackout
+&delay:2
+&db_on
+db:After a period of time...
+&wait
+db:Another rainy day...
+&wait
+&end

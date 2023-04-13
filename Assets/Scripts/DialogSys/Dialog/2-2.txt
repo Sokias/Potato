@@ -1,0 +1,39 @@
+&blackin
+&delay:1
+&blackout
+&delay:2
+&d2_on
+&c2_on
+&c1_on
+d2:You did a good job.
+&wait
+d2:And there's nothing more I can teach you.
+&wait
+d2:My life is about to end, it's easy to tell just by looking at me.
+&wait
+d2:Before I leave...
+&wait
+d2:I want to know that can you help me complete my unfulfilled dream...
+&wait
+d2:Tell me... if being a McDonald's potato is also your dream...
+&wait
+c1:Yes, I will be a McPotato!
+c2:Maybe no...?
+c3:I dont know...
+&choice_on
+d2_choice_ans:[NO_ANS_0]:Thank you...:No? Why?:You don't know...
+&wait
+d2_choice_ans:[NO_ANS_0]:You're not trying to make me happy, right?:You probably didn't hear my question clearly...:What's wrong?
+&wait
+d2_choice_ans:[NO_ANS_0]:Let me confirm one more time...:Let me ask you again...:You need to know what is your dream. It's important!
+&wait
+d2:Do you want to be a McPotato?
+&wait
+c1:Yes, I want to be a McPotato!
+c2:That's not my dream.
+c3:I really dont know...
+&choice_on
+&save_choice
+d2:Ok...
+&wait
+&end

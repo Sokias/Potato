@@ -1,0 +1,48 @@
+&blackin
+&delay:1
+&bg_update:5
+&blackout
+&delay:2
+&d2_on
+&c2_on
+d2:It's been a long time since I've talked to you, young potato.
+&wait
+&c1_on
+&d1_on
+d1:Yes, how are you doing these days?
+&wait
+d2:Good, good.
+&wait
+&d1_off
+d2:You've absorbed a lot of nutrients and water, and I've seen you grow well.
+&wait
+d2:But it's not enough.
+&wait
+d2:There is a bigger challenge waiting for you.
+&wait
+d2:If you fail, you will not be able to take the final test...
+&wait
+&d1_on
+d1: What is it?
+&wait
+d2:Listen carefully...
+&wait
+&d1_off
+&d2_off
+&c1_off
+&c2_off
+&delay:1
+&db_on
+db:This is very important to you
+&wait
+db:You need to learn to avoid pests
+&wait
+db:Just like before, move yourself by using [A/D] or the [←/→] key
+&wait
+db:And this time, you can also move up and down by using [W/S] or the [↑/↓] key
+&wait
+db:Protect yourself from the bugs that move around!
+&wait
+db:Now ready...
+&wait
+&end

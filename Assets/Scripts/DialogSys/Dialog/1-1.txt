@@ -2,7 +2,7 @@
 &delay:1
 &bg_update:2
 &blackout
-&delay:1
+&delay:2
 &d2_on
 &c2_on
 &c1_on
