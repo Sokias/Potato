@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Minigame01_Control : MonoBehaviour
+public class Minigame03_Control : MonoBehaviour
 {
     //game section timer
     float timer = 30f;
