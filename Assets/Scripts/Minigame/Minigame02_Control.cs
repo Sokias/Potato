@@ -34,9 +34,9 @@ public class Minigame02_Control : MonoBehaviour
         if (!Physics2D.Linecast(player.transform.position,spotLight.transform.position, 1 << 3)) {
             Game.Control.Score_nutrition += Time.deltaTime;
         }
-        Debug.DrawLine(player.transform.position, spotLight.transform.position);
+        //Debug.DrawLine(player.transform.position, spotLight.transform.position);
 
-        timeUntilNextplatform += Time.deltaTime + Game.Control.Score_nutrition / 20f * Time.deltaTime;
+        timeUntilNextplatform += Time.deltaTime + Game.Control.Score_nutrition / 40f * Time.deltaTime;
         float temp = 2.0f;
         if (timeUntilNextplatform > temp)
         {

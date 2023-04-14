@@ -45,7 +45,7 @@ public class PlayerMoving01 : MonoBehaviour
             if (transform.position.x < -6.89)
             {
                 rb2d.velocity = new Vector2(0, 0);
-                transform.position = new Vector2(-6.68f, -2f);
+                transform.position = new Vector2(-6.88f, -2f);
             }
 
         }
