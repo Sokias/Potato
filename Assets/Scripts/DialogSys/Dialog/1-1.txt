@@ -38,4 +38,6 @@ db:Get the falling water by moving under it!
 &wait
 db:I hope you got it, let's try it out!
 &wait
+&blackin
+&delay:2
 &end

@@ -6,12 +6,14 @@ using TMPro;
 public class Minigame03_Control : MonoBehaviour
 {
     //game section timer
-    float timer = 30f;
+    float timer = 32f;
     public TMP_Text T_timer;
     public TMP_Text T_water;
 
     public GameObject Water_Prefab;
     public GameObject player;
+
+    public GameObject UI;
 
     float timeUntilNextWater = 0f;
 
@@ -34,11 +36,12 @@ public class Minigame03_Control : MonoBehaviour
         {
             timeUntilNextWater = 0f;
             Instantiate(Water_Prefab,
-                        new Vector3(Random.Range(-8.4f, 8.4f), 3.3f),
-                        Quaternion.identity,this.transform);
-            if (Random.Range(0f, 2f) > 1.3f) {
+                        new Vector3(Random.Range(-6.4f, 6.4f), 4.6f),
+                        Quaternion.identity, this.transform);
+            if (Random.Range(0f, 2f) > 1.3f)
+            {
                 Instantiate(Water_Prefab,
-                            new Vector3(Random.Range(-8.4f, 8.4f), 3.3f),
+                            new Vector3(Random.Range(-6.4f, 6.4f), 4.6f),
                             Quaternion.identity, this.transform);
             }
         }
@@ -48,9 +51,9 @@ public class Minigame03_Control : MonoBehaviour
     private void OnEnable()
     {
         StartCoroutine(endMinigame());
-        Game.Control.canControl = true;
-        timer = 30f;
-        timeUntilNextWater = 0f;
+        //Game.Control.canControl = true;
+        timer = 31f;
+        timeUntilNextWater = -2f;
         player.transform.position = new Vector2(0, -2);
     }
 
@@ -62,7 +65,19 @@ public class Minigame03_Control : MonoBehaviour
 
     IEnumerator endMinigame()
     {
+        Game.Control.blackout();
+
+        yield return new WaitForSeconds(1);
+        UI.SetActive(true);
+        Game.Control.canControl = true;
+
         yield return new WaitForSeconds(30);
+        Game.Control.blackin();
+        Game.Control.canControl = false;
+        player.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+        UI.SetActive(false);
+
+        yield return new WaitForSeconds(1);
         gameObject.SetActive(false);
     }
 }

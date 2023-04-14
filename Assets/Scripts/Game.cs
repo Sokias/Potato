@@ -48,7 +48,7 @@ public class Game : MonoBehaviour
         startDialog("0-1");
 
         //test
-        //startDialog("2-2");
+        //startDialog("1-2");
         //startGame("1-1-2G", 2);
     }
 
@@ -147,12 +147,14 @@ public class Game : MonoBehaviour
 
     public void blackin()
     {
-        blackScreen.GetComponent<Animator>().SetTrigger("blackin");
+        blackScreen.GetComponent<Animator>().SetBool("blackout", false);
+        blackScreen.GetComponent<Animator>().SetBool("blackin", true);
     }
 
     public void blackout()
     {
-        blackScreen.GetComponent<Animator>().SetTrigger("blackout");
+        blackScreen.GetComponent<Animator>().SetBool("blackin", false);
+        blackScreen.GetComponent<Animator>().SetBool("blackout", true);
     }
 
     public void potato_old()

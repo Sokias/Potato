@@ -1,4 +1,3 @@
-&blackin
 &delay:1
 &blackout
 &delay:2
@@ -7,4 +6,6 @@ db:After a period of time...
 &wait
 db:Another rainy day...
 &wait
+&blackin
+&delay:2
 &end

@@ -6,7 +6,7 @@ using TMPro;
 public class Minigame02_Control : MonoBehaviour
 {
     //game section timer
-    float timer = 30f;
+    float timer = 32f;
     public TMP_Text T_timer;
     public TMP_Text T_score;
 
@@ -15,6 +15,7 @@ public class Minigame02_Control : MonoBehaviour
 
     public GameObject player;
     public GameObject spotLight;
+    public GameObject UI;
 
     float timeUntilNextplatform = 0f;
 
@@ -58,22 +59,35 @@ public class Minigame02_Control : MonoBehaviour
     private void OnEnable()
     {
         StartCoroutine(endMinigame());
-        Game.Control.canControl = true;
-        Game.Control.GlobalLight.intensity = 0.5f;
-        timer = 30f;
-        timeUntilNextplatform = 0f;
+        //Game.Control.canControl = true;
+        //Game.Control.GlobalLight.intensity = 0.5f;
+        timer = 31f;
+        timeUntilNextplatform = -2f;
+        player.transform.position = new Vector2(0, -2);
     }
 
     private void OnDisable()
     {
         Game.Control.canControl = false;
         Game.Control.startNext();
-        Game.Control.GlobalLight.intensity = 1f;
+        //Game.Control.GlobalLight.intensity = 1f;
     }
 
     IEnumerator endMinigame()
     {
+        Game.Control.blackout();
+
+        yield return new WaitForSeconds(1);
+        UI.SetActive(true);
+        Game.Control.canControl = true;
+
         yield return new WaitForSeconds(30);
+        Game.Control.blackin();
+        Game.Control.canControl = false;
+        player.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+        UI.SetActive(false);
+
+        yield return new WaitForSeconds(1);
         gameObject.SetActive(false);
     }
 }

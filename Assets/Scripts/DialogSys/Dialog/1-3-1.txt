@@ -7,4 +7,6 @@ db:After a period of time...
 &wait
 db:One rainy day...
 &wait
+&blackin
+&delay:2
 &end
