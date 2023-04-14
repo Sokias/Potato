@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 //using Unity.PlasticSCM.Editor.WebApi;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Rendering.Universal;
 
 public class Game : MonoBehaviour
@@ -31,6 +32,10 @@ public class Game : MonoBehaviour
     public GameObject background;
     public Sprite[] backgroundSprite = new Sprite[9];
     public GameObject blackScreen;
+    public GameObject oldPotato;
+    public Sprite oldoldPotato;
+    public GameObject oldPotatoDialog;
+    public Sprite oldoldPotatoDialog;
 
 
     private void Awake()
@@ -43,7 +48,7 @@ public class Game : MonoBehaviour
         startDialog("0-1");
 
         //test
-        //startDialog("1-1-2");
+        //startDialog("2-2");
         //startGame("1-1-2G", 2);
     }
 
@@ -148,6 +153,12 @@ public class Game : MonoBehaviour
     public void blackout()
     {
         blackScreen.GetComponent<Animator>().SetTrigger("blackout");
+    }
+
+    public void potato_old()
+    {
+        oldPotato.GetComponent<Image>().sprite = oldoldPotato;
+        oldPotatoDialog.GetComponent<Image>().sprite = oldoldPotatoDialog;
     }
 
 }

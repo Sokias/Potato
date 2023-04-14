@@ -198,6 +198,9 @@ public class DialogSys : MonoBehaviour
             case "&blackout":
                 Game.Control.blackout();
                 break;
+            case "&oldpotato":
+                Game.Control.potato_old();
+                break;
 
             default:
                 var line = textList[index].Split(':');

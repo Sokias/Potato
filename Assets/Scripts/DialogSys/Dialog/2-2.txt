@@ -1,5 +1,6 @@
 &blackin
 &delay:1
+&oldpotato
 &blackout
 &delay:2
 &d2_on

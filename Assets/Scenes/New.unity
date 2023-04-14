@@ -1509,6 +1509,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 525343761}
   m_CullTransparentMesh: 1
+--- !u!1 &544953525 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 339334812544558713, guid: a35b92160f87d724aab3225c272b6e20, type: 3}
+  m_PrefabInstance: {fileID: 436614981}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &578422914
 GameObject:
   m_ObjectHideFlags: 0
@@ -2183,6 +2188,11 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &900325686 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4332041781814529587, guid: a35b92160f87d724aab3225c272b6e20, type: 3}
+  m_PrefabInstance: {fileID: 436614981}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &924131865
 GameObject:
   m_ObjectHideFlags: 0
@@ -4217,7 +4227,7 @@ MonoBehaviour:
   canControl: 0
   gameSys_01: {fileID: 1201423814}
   gameSys_02: {fileID: 167488053}
-  gameSys_03: {fileID: 0}
+  gameSys_03: {fileID: 671990073}
   GlobalLight: {fileID: 640639818}
   background: {fileID: 1609440839}
   backgroundSprite:
@@ -4231,6 +4241,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: b19db92bec5a743098fd3de9962fac79, type: 3}
   - {fileID: 21300000, guid: 49365a44f1caa44eea3a4bf8fe65fff9, type: 3}
   blackScreen: {fileID: 428073332}
+  oldPotato: {fileID: 544953525}
+  oldoldPotato: {fileID: 21300000, guid: 800832dd5514242bbbebfdcfa8b1aaa5, type: 3}
+  oldPotatoDialog: {fileID: 900325686}
+  oldoldPotatoDialog: {fileID: 21300000, guid: ce9e725b05083411f8d7f38a51f4e624, type: 3}
 --- !u!4 &2143486838
 Transform:
   m_ObjectHideFlags: 0
