@@ -7,7 +7,7 @@ using TMPro;
 public class DialogSys : MonoBehaviour
 {
     [Header("TextFiles")]
-    public TextAsset[] textFile = new TextAsset[6];
+    public TextAsset[] textFile = new TextAsset[11];
 
     [Header("TextObjects")]
     public TMP_Text textLabel1;
@@ -105,6 +105,21 @@ public class DialogSys : MonoBehaviour
             case "1-2":
                 currentTextFile = textFile[5];
                 break;
+            case "1-3-1":
+                currentTextFile = textFile[6];
+                break;
+            case "1-3-2":
+                currentTextFile = textFile[7];
+                break;
+            case "1-3-3":
+                currentTextFile = textFile[8];
+                break;
+            case "2-1":
+                currentTextFile = textFile[9];
+                break;
+            case "2-2":
+                currentTextFile = textFile[10];
+                break;
 
             default:
                 break;
@@ -192,8 +207,8 @@ public class DialogSys : MonoBehaviour
                         Game.Control.updateBG(int.Parse(line[1]));
                         break;
                     case "&delay":
-                        StartCoroutine(delay(int.Parse(line[1])));
                         status = true;
+                        StartCoroutine(delay(int.Parse(line[1])));
                         break;
 
                     case "d1":

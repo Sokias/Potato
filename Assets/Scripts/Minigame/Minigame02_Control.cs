@@ -21,7 +21,7 @@ public class Minigame02_Control : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(endMinigame());
+        //StartCoroutine(endMinigame());
     }
 
     // Update is called once per frame
@@ -57,6 +57,7 @@ public class Minigame02_Control : MonoBehaviour
 
     private void OnEnable()
     {
+        StartCoroutine(endMinigame());
         Game.Control.canControl = true;
         Game.Control.GlobalLight.intensity = 0.5f;
         timer = 30f;

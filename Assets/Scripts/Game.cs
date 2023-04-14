@@ -24,6 +24,7 @@ public class Game : MonoBehaviour
     public bool canControl = false;
     public GameObject gameSys_01;
     public GameObject gameSys_02;
+    public GameObject gameSys_03;
 
     [Header("GameObject")]
     public Light2D GlobalLight;
@@ -63,6 +64,9 @@ public class Game : MonoBehaviour
             case 2:
                 gameSys_02.SetActive(true);
                 break;
+            case 3:
+                gameSys_02.SetActive(true);
+                break;
 
             default:
                 Debug.Log("ERROR_gameSys_Number_Undefine");
@@ -97,7 +101,33 @@ public class Game : MonoBehaviour
             case "1-1-2G":
                 startDialog("1-2");
                 break;
-
+            case "1-2":
+                startDialog("1-3-1");
+                break;
+            case "1-3-1":
+                startGame("1-3-1G", 1);
+                break;
+            case "1-3-1G":
+                startDialog("1-3-2");
+                break;
+            case "1-3-2":
+                startGame("1-3-2G", 2);
+                break;
+            case "1-3-2G":
+                startDialog("1-3-3");
+                break;
+            case "1-3-3":
+                startGame("1-3-3G", 1);
+                break;
+            case "1-3-3G":
+                startDialog("2-1");
+                break;
+            case "2-1":
+                startGame("2-1G", 3);
+                break;
+            case "2-1G":
+                startDialog("2-2");
+                break;
 
             default:
                 Debug.Log("ERROR_startNext_Status_Undefine");
