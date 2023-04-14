@@ -25,7 +25,7 @@ public class Minigame03_Control : MonoBehaviour
     void Update()
     {
         timer -= Time.deltaTime;
-        T_timer.text = "Time:" + (timer).ToString("0");
+        T_timer.text = (timer).ToString("0");
 
         T_water.text = Game.Control.Score_water.ToString();
 

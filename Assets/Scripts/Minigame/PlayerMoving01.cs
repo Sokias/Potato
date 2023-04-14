@@ -37,15 +37,15 @@ public class PlayerMoving01 : MonoBehaviour
                 }
 
             //position check
-            if (transform.position.x > 8.41)
+            if (transform.position.x > 6.68)
             {
                 rb2d.velocity = new Vector2(0, 0);
-                transform.position = new Vector2(8.4f, -2f);
+                transform.position = new Vector2(6.67f, -2f);
             }
-            if (transform.position.x < -8.41)
+            if (transform.position.x < -6.89)
             {
                 rb2d.velocity = new Vector2(0, 0);
-                transform.position = new Vector2(-8.4f, -2f);
+                transform.position = new Vector2(-6.68f, -2f);
             }
 
         }

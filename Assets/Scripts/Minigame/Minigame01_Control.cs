@@ -25,7 +25,7 @@ public class Minigame01_Control : MonoBehaviour
     void Update()
     {
         timer -= Time.deltaTime;
-        T_timer.text = "Time:" + (timer).ToString("0");
+        T_timer.text = (timer).ToString("0");
 
         T_water.text = Game.Control.Score_water.ToString();
 
@@ -34,11 +34,11 @@ public class Minigame01_Control : MonoBehaviour
         {
             timeUntilNextWater = 0f;
             Instantiate(Water_Prefab,
-                        new Vector3(Random.Range(-8.4f, 8.4f), 3.3f),
+                        new Vector3(Random.Range(-6.4f, 6.4f), 4.6f),
                         Quaternion.identity,this.transform);
             if (Random.Range(0f, 2f) > 1.3f) {
                 Instantiate(Water_Prefab,
-                            new Vector3(Random.Range(-8.4f, 8.4f), 3.3f),
+                            new Vector3(Random.Range(-6.4f, 6.4f), 4.6f),
                             Quaternion.identity, this.transform);
             }
         }

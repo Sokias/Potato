@@ -28,7 +28,7 @@ public class Minigame02_Control : MonoBehaviour
     void Update()
     {
         timer -= Time.deltaTime;
-        T_timer.text = "Time:" + (timer).ToString("0");
+        T_timer.text = (timer).ToString("0");
         T_score.text = Game.Control.Score_nutrition.ToString("0");
 
         if (!Physics2D.Linecast(player.transform.position,spotLight.transform.position, 1 << 3)) {
