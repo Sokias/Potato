@@ -1,5 +1,6 @@
 &blackin
 &delay:1
+&bg_update:7
 &blackout
 &delay:2
 &db_on

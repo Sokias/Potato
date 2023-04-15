@@ -1,3 +1,4 @@
+&bg_update:6
 &db_on
 db:You choose to become a McPotato!
 &wait

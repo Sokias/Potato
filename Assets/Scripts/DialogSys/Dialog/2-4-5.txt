@@ -1,3 +1,4 @@
+&bg_update:9
 &delay:1
 &blackout
 &delay:2
