@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Rendering.Universal;
+using TMPro;
 
 public class Game : MonoBehaviour
 {
@@ -174,8 +175,11 @@ public class Game : MonoBehaviour
             case "2-4-5":
                 startGame("2-4-5G", 3);
                 break;
+
+            //for"3-0-Test"only
             case "2-4-5G":
                 startDialog("3-0-Test");
+                showData();
                 break;
 
             default:
@@ -184,7 +188,20 @@ public class Game : MonoBehaviour
         }
     }
 
-
+    ////////////////////    ////////////////////    ////////////////////
+    //for"3-0-Test"only
+    [Header("GameObject")]
+    public GameObject dataGUI;
+    public TMP_Text t1, t2, t3;
+    public void showData() 
+    {
+        t1.text = Score_water.ToString("0");
+        t2.text = Score_nutrition.ToString("0");
+        t3.text = Score_health.ToString("0");
+        dataGUI.SetActive(true);
+    }
+    //for"3-0-Test"only
+    ////////////////////    ////////////////////    ////////////////////
 
     public void updateBG(int bg_index)
     {
