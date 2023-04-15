@@ -1285,7 +1285,7 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4539718116264274958}
-  m_CullTransparentMesh: 1
+  m_CullTransparentMesh: 0
 --- !u!114 &1801583402129374008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1340,6 +1340,14 @@ MonoBehaviour:
   - {fileID: 4900000, guid: ad6c8eab3246944aeb4f76ae0d374f5e, type: 3}
   - {fileID: 4900000, guid: 0ee9df9386caa4ec3b70f37e57488da4, type: 3}
   - {fileID: 4900000, guid: e372c58ae3ecc43f6868997e6e2d6670, type: 3}
+  - {fileID: 4900000, guid: f263c56f867c54390a94ef06d99b050f, type: 3}
+  - {fileID: 4900000, guid: ff6f172ffcdd8451292c50a675574f67, type: 3}
+  - {fileID: 4900000, guid: f80c5d2cf248149c2b0d3abf68a74d01, type: 3}
+  - {fileID: 4900000, guid: 43a7d09f1dc5b4086b971bc462eb62a4, type: 3}
+  - {fileID: 4900000, guid: 3c5d5d7baa7274f5e91d4f493af58e48, type: 3}
+  - {fileID: 4900000, guid: 7987ee3e6a3ae4e4499b35cd1cae2b9e, type: 3}
+  - {fileID: 4900000, guid: c546ecff838cc41e0afb145ecff161c4, type: 3}
+  - {fileID: 4900000, guid: 6a065175e9a484b06812df6f974171f0, type: 3}
   textLabel1: {fileID: 1080296554486041704}
   textLabel2: {fileID: 4329612030074813430}
   textLabelB: {fileID: 1634965414244949314}

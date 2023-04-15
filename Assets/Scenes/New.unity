@@ -4248,6 +4248,7 @@ MonoBehaviour:
   oldoldPotato: {fileID: 21300000, guid: 800832dd5514242bbbebfdcfa8b1aaa5, type: 3}
   oldPotatoDialog: {fileID: 900325686}
   oldoldPotatoDialog: {fileID: 21300000, guid: ce9e725b05083411f8d7f38a51f4e624, type: 3}
+  dataGUI: {fileID: 0}
 --- !u!4 &2143486838
 Transform:
   m_ObjectHideFlags: 0

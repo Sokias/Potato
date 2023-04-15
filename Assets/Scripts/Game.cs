@@ -133,12 +133,58 @@ public class Game : MonoBehaviour
             case "2-1G":
                 startDialog("2-2");
                 break;
+            case "2-2":
+                if (savedAnswer == 1)
+                {
+                    startDialog("2-3-A");
+                }
+                else
+                {
+                    startDialog("2-3-B");
+                }
+                break;
+            case "2-3-A":
+            case "2-3-B":
+                startDialog("2-4-1");
+                break;
+            case "2-4-1":
+                startGame("2-4-1G", 2);
+                break;
+            case "2-4-1G":
+                startDialog("2-4-2");
+                break;
+            case "2-4-2":
+                startGame("2-4-2G", 3);
+                break;
+            case "2-4-2G":
+                startDialog("2-4-3");
+                break;
+            case "2-4-3":
+                startGame("2-4-3G", 1);
+                break;
+            case "2-4-3G":
+                startDialog("2-4-4");
+                break;
+            case "2-4-4":
+                startGame("2-4-4G", 2);
+                break;
+            case "2-4-4G":
+                startDialog("2-4-5");
+                break;
+            case "2-4-5":
+                startGame("2-4-5G", 3);
+                break;
+            case "2-4-5G":
+                startDialog("3-0-Test");
+                break;
 
             default:
                 Debug.Log("ERROR_startNext_Status_Undefine");
                 break;
         }
     }
+
+
 
     public void updateBG(int bg_index)
     {
