@@ -1,0 +1,6 @@
+&db_on
+db:You didn't listen to the old potato and made your own choice.
+&wait
+db:Be yourself for the rest of your life!
+&wait
+&end

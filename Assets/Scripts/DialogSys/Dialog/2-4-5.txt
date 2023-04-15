@@ -1,0 +1,13 @@
+&delay:1
+&blackout
+&delay:2
+&db_on
+db:After a period of time...
+&wait
+db:They say it's almost harvest season.
+&wait
+db:It's almost over, but don't relax until the end.
+&wait
+&blackin
+&delay:2
+&end

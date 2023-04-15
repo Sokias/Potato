@@ -1,0 +1,15 @@
+&delay:1
+&blackout
+&delay:2
+&db_on
+db:Thank you for playing this demo.
+&wait
+db:Here should be a relative ending shown based on your data.
+&wait
+db:But we haven't decided on the exact numbers yet. So that means we need your help.
+&wait
+db:Please report your data to the developers and the next demo will have the ending.
+&wait
+&blackin
+&delay:2
+&end

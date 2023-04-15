@@ -1,0 +1,6 @@
+&db_on
+db:You choose to become a McPotato!
+&wait
+db:Grow harder in the rest of your life!
+&wait
+&end
