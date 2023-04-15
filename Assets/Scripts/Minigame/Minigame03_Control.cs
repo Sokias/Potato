@@ -8,14 +8,14 @@ public class Minigame03_Control : MonoBehaviour
     //game section timer
     float timer = 32f;
     public TMP_Text T_timer;
-    public TMP_Text T_water;
+    public TMP_Text T_health;
 
-    public GameObject Water_Prefab;
+    public GameObject bugs_Prefab;
     public GameObject player;
 
     public GameObject UI;
 
-    float timeUntilNextWater = 0f;
+    float timeUntilNextBug = 0f;
 
     // Start is called before the first frame update
     void Start()
@@ -29,21 +29,37 @@ public class Minigame03_Control : MonoBehaviour
         timer -= Time.deltaTime;
         T_timer.text = (timer).ToString("0");
 
-        T_water.text = Game.Control.Score_water.ToString();
+        T_health.text = Game.Control.Score_health.ToString();
 
-        timeUntilNextWater += Time.deltaTime + Game.Control.Score_water / 10f * Time.deltaTime;
-        if (timeUntilNextWater > 2f)
+        timeUntilNextBug += Time.deltaTime + Game.Control.Score_health / 50f * Time.deltaTime;
+        if (timeUntilNextBug > 2f)
         {
-            timeUntilNextWater = 0f;
-            Instantiate(Water_Prefab,
-                        new Vector3(Random.Range(-6.4f, 6.4f), 4.6f),
-                        Quaternion.identity, this.transform);
-            if (Random.Range(0f, 2f) > 1.3f)
+            timeUntilNextBug = 0f;
+            var tempR = Random.Range(0, 3);
+            switch (tempR)
             {
-                Instantiate(Water_Prefab,
-                            new Vector3(Random.Range(-6.4f, 6.4f), 4.6f),
-                            Quaternion.identity, this.transform);
+                case 0:
+                    Instantiate(bugs_Prefab,
+                        new Vector3(Random.Range(-9f, 9f), 4.75f),
+                        Quaternion.identity, this.transform);
+                    break;
+                case 1:
+                    Instantiate(bugs_Prefab,
+                        new Vector3(Random.Range(-9f, 9f), -4.75f),
+                        Quaternion.identity, this.transform);
+                    break;
+                case 2:
+                    Instantiate(bugs_Prefab,
+                        new Vector3(-9f, Random.Range(-4.75f, 4.75f)),
+                        Quaternion.identity, this.transform);
+                    break;
+                case 3:
+                    Instantiate(bugs_Prefab,
+                        new Vector3(9f, Random.Range(-4.75f, 4.75f)),
+                        Quaternion.identity, this.transform);
+                    break;
             }
+            
         }
 
     }
@@ -53,8 +69,8 @@ public class Minigame03_Control : MonoBehaviour
         StartCoroutine(endMinigame());
         //Game.Control.canControl = true;
         timer = 31f;
-        timeUntilNextWater = -2f;
-        player.transform.position = new Vector2(0, -2);
+        timeUntilNextBug = -2f;
+        player.transform.position = new Vector2(0, 0);
     }
 
     private void OnDisable()

@@ -48,7 +48,7 @@ public class Game : MonoBehaviour
         startDialog("0-1");
 
         //test
-        //startDialog("1-2");
+        //startDialog("2-2");
         //startGame("1-1-2G", 2);
     }
 
@@ -70,7 +70,7 @@ public class Game : MonoBehaviour
                 gameSys_02.SetActive(true);
                 break;
             case 3:
-                gameSys_02.SetActive(true);
+                gameSys_03.SetActive(true);
                 break;
 
             default:

@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Pickup_water
+  - Pickup_bugs
+  - potato3
   layers:
   - Default
   - TransparentFX
