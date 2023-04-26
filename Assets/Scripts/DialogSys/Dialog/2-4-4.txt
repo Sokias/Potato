@@ -6,6 +6,34 @@ db:After a period of time...
 &wait
 db:Another sunny day...
 &wait
+&db_off
+&d3_on
+&c3_on
+d3:Hi...
+&wait
+&c1_on
+&d1_on
+d1:Wow, it's been a long time. Where have you been?
+&wait
+d3:I was surprised by Old Potato's death...
+&wait
+&d1_off
+d3:He was the first potato I saw when I was born. He taught me everything about being a potato.
+&wait
+d3:He had dreams, and although he didn't succeed, he created us...
+&wait
+d3:Now he's gone, and we are the continuation of his life.
+&wait
+d3:I want to try to achieve his dream.
+&wait
+d3:Hope it's not too late...
+&wait
+c1:You can make it!
+c2:Hope so.
+c3:I don't think you have enough time...
+&choice_on
+d3:Anyway, I'll try my best.
+&wait
 &blackin
 &delay:2
 &end

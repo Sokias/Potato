@@ -6,6 +6,20 @@ db:After a period of time...
 &wait
 db:Another rainy day...
 &wait
+&db_off
+&d3_on
+&c3_on
+d3:I haven't seen you in a while. You seem to be settling into life pretty well now.
+&wait
+&c1_on
+&d1_on
+d1:It's been raining a lot recently, and there's not much sunshine. I don't like that.
+&wait
+d3:Don't worry, my friend. This is the life of a potato, and we can't change it.
+&wait
+&d1_off
+d3:Even if we can't become a McPotato, there will always be a place for us.
+&wait
 &blackin
 &delay:2
 &end

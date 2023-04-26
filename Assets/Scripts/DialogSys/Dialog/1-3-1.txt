@@ -7,6 +7,31 @@ db:After a period of time...
 &wait
 db:One rainy day...
 &wait
+&db_off
+&c3_on
+&d3_on
+d3:Hi, it looks like you're my neighbor.
+&wait
+d3:We'll probably be spending a lot of time together if nothing unexpected happens!
+&wait
+&c1_on
+&d1_on
+d1:Hello, good to see you.
+&wait
+&d3_off
+d1:Have you heard about the McDonald's potato? Everyone seems to be talking about it.
+&wait
+&d3_on
+d3:Oh yes. It's a difficult task that only the best potatoes can complete.
+&wait
+&d1_off
+d3:But it may not be suitable for me...after all, I'm just an ordinary potato.
+&wait
+&d1_on
+d1:Ok, I understand. See you later. I'm going to get some water.
+&wait
+d3:Bye.
+&wait
 &blackin
 &delay:2
 &end

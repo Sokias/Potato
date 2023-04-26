@@ -8,6 +8,15 @@ db:After a period of time...
 &wait
 db:It's a sunny day...
 &wait
+&db_off
+&c1_on
+&d1_on
+d1:My friend didn't show up today...
+&wait
+d1:The death of the old potatoes made me very sad.
+&wait
+d1:However, since I have made the choice, I should try to make it...
+&wait
 &blackin
 &delay:2
 &end

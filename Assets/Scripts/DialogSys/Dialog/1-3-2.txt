@@ -6,6 +6,27 @@ db:After a period of time...
 &wait
 db:It's a sunny day...
 &wait
+&db_off
+&d3_on
+&c3_on
+d3:What's up.
+&wait
+&d1_on
+&c1_on
+d1:What's up.
+&wait
+d1:Maybe it's a bit abrupt to ask, do you have any future plans?
+&wait
+d3:I don't know.
+&wait
+&d1_off
+d3:I've known since I was born that I could never become a McDonald's Potato.
+&wait
+d3:I'll probably end up in a supermarket like most potatoes, just sitting on a shelf...
+&wait
+&d1_on
+d1:Ok...
+&wait
 &blackin
 &delay:2
 &end

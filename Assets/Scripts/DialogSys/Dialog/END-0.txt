@@ -1,0 +1,24 @@
+&delay:1
+&blackout
+&delay:2
+&db_on
+db:After a period of time...
+&wait
+&db_off
+&c1_on
+&d1_on
+d1:Tomorrow is the day of the final test...
+&wait
+d1:I didn't see my friend again after our last conversation.
+&wait
+d1:Can he fulfill Old Potato's dream?
+&wait
+d1:Maybe he'll just become a normal supermarket potato like he thought before...
+&wait
+d1:......
+&wait
+d1:Now, where will I go?
+&wait
+&blackin
+&delay:2
+&end
