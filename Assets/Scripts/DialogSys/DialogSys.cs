@@ -12,6 +12,7 @@ public class DialogSys : MonoBehaviour
     [Header("TextObjects")]
     public TMP_Text textLabel1;
     public TMP_Text textLabel2;
+    public TMP_Text textLabel3;//
     public TMP_Text textLabelB;
     public TMP_Text choiceTextLabel1;
     public TMP_Text choiceTextLabel2;
@@ -19,6 +20,8 @@ public class DialogSys : MonoBehaviour
 
     [Header("GameObjects")]
     public GameObject Character1, Character2;
+    public GameObject Character3;//
+    public GameObject Dialog3;//
     public GameObject Dialog1, Dialog2, DialogB;
     public GameObject DialogChoice;
     public GameObject[] Pointer = new GameObject[3];
@@ -189,6 +192,12 @@ public class DialogSys : MonoBehaviour
             case "&c2_off":
                 Character2.SetActive(false);
                 break;
+            case "&c3_on":
+                Character3.SetActive(true);
+                break;
+            case "&c3_off":
+                Character3.SetActive(false);
+                break;
             case "&d1_on":
                 Dialog1.SetActive(true);
                 break;
@@ -200,6 +209,12 @@ public class DialogSys : MonoBehaviour
                 break;
             case "&d2_off":
                 Dialog2.SetActive(false);
+                break;
+            case "&d3_on":
+                Dialog3.SetActive(true);
+                break;
+            case "&d3_off":
+                Dialog3.SetActive(false);
                 break;
             case "&db_on":
                 DialogB.SetActive(true);
@@ -243,6 +258,9 @@ public class DialogSys : MonoBehaviour
                         break;
                     case "d2":
                         textLabel2.SetText(line[1]);
+                        break;
+                    case "d3":
+                        textLabel3.SetText(line[1]);
                         break;
                     case "db":
                         textLabelB.SetText(line[1]);
