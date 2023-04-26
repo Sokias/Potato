@@ -142,7 +142,7 @@ public class DialogSys : MonoBehaviour
             case "2-4-5":
                 currentTextFile = textFile[17];
                 break;
-            case "3-0-Test":
+            case "END-0":
                 currentTextFile = textFile[18];
                 break;
 

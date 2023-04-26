@@ -176,10 +176,14 @@ public class Game : MonoBehaviour
                 startGame("2-4-5G", 3);
                 break;
 
-            //for"3-0-Test"only
+            ////for"3-0-Test"only
+            //case "2-4-5G":
+            //    startDialog("3-0-Test");
+            //    showData();
+            //    break;
+
             case "2-4-5G":
-                startDialog("3-0-Test");
-                showData();
+                startDialog("END-0");
                 break;
 
             default:
@@ -190,16 +194,16 @@ public class Game : MonoBehaviour
 
     ////////////////////    ////////////////////    ////////////////////
     //for"3-0-Test"only
-    [Header("GameObject")]
-    public GameObject dataGUI;
-    public TMP_Text t1, t2, t3;
-    public void showData() 
-    {
-        t1.text = Score_water.ToString("0");
-        t2.text = Score_nutrition.ToString("0");
-        t3.text = Score_health.ToString("0");
-        dataGUI.SetActive(true);
-    }
+    //[Header("GameObject")]
+    //public GameObject dataGUI;
+    //public TMP_Text t1, t2, t3;
+    //public void showData() 
+    //{
+    //    t1.text = Score_water.ToString("0");
+    //    t2.text = Score_nutrition.ToString("0");
+    //    t3.text = Score_health.ToString("0");
+    //    dataGUI.SetActive(true);
+    //}
     //for"3-0-Test"only
     ////////////////////    ////////////////////    ////////////////////
 

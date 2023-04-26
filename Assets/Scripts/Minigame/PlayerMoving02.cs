@@ -27,11 +27,11 @@ public class PlayerMoving02 : MonoBehaviour
             {
                 rb2d.velocity = new Vector2(-speed, 0);
             }
-            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.RightArrow))
+            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
             {
                 rb2d.velocity = new Vector2(0, speed);
             }
-            if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.LeftArrow))
+            if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
             {
                 rb2d.velocity = new Vector2(0, -speed);
             }
@@ -43,11 +43,11 @@ public class PlayerMoving02 : MonoBehaviour
             {
                 rb2d.velocity = new Vector2(0, 0);
             }
-            if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.LeftArrow))
+            if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.UpArrow))
             {
                 rb2d.velocity = new Vector2(0, 0);
             }
-            if (Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.RightArrow))
+            if (Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.DownArrow))
             {
                 rb2d.velocity = new Vector2(0, 0);
             }

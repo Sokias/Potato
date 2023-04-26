@@ -89,6 +89,10 @@ public class Minigame03_Control : MonoBehaviour
 
         yield return new WaitForSeconds(30);
         Game.Control.blackin();
+
+        GameObject[] tempObjs = GameObject.FindGameObjectsWithTag("Pickup_bugs");
+        foreach (GameObject tempObj in tempObjs) { Destroy(tempObj.gameObject); }
+
         Game.Control.canControl = false;
         player.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
         UI.SetActive(false);

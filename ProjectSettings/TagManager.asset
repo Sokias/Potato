@@ -7,6 +7,7 @@ TagManager:
   - Pickup_water
   - Pickup_bugs
   - potato3
+  - platform
   layers:
   - Default
   - TransparentFX
