@@ -35,12 +35,8 @@ public class DialogSys : MonoBehaviour
     private void OnEnable()
     {
         index = 0;
-        Character1.SetActive(false);
-        Character2.SetActive(false);
-        Dialog1.SetActive(false);
-        Dialog2.SetActive(false);
-        DialogB.SetActive(false);
-        DialogChoice.SetActive(false);
+
+        clearAll();
 
         setCurrentTextFile();
         GetTextFromFile(currentTextFile);
@@ -178,6 +174,9 @@ public class DialogSys : MonoBehaviour
             case "&end": //on windows change it to &en
                 dialogEnd();
                 //gameObject.SetActive(false);
+                break;
+            case "&clear":
+                clearAll();
                 break;
 
             case "&c1_on":
@@ -322,13 +321,20 @@ public class DialogSys : MonoBehaviour
     void dialogEnd()
     {
         index = 0;
+        clearAll();
+        gameObject.SetActive(false);
+    }
+
+    void clearAll()
+    {
         Character1.SetActive(false);
         Character2.SetActive(false);
+        Character3.SetActive(false);
         Dialog1.SetActive(false);
         Dialog2.SetActive(false);
+        Dialog3.SetActive(false);
         DialogB.SetActive(false);
         DialogChoice.SetActive(false);
-        gameObject.SetActive(false);
     }
 
     IEnumerator delay(int time)

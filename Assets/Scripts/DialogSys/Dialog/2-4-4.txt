@@ -34,6 +34,7 @@ c3:I don't think you have enough time...
 &choice_on
 d3:Anyway, I'll try my best.
 &wait
+&clear
 &blackin
 &delay:2
 &end
