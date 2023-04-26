@@ -17,6 +17,8 @@ public class Minigame03_Control : MonoBehaviour
 
     float timeUntilNextBug = 0f;
 
+    bool canSpawn = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,7 +34,7 @@ public class Minigame03_Control : MonoBehaviour
         T_health.text = Game.Control.Score_health.ToString();
 
         timeUntilNextBug += Time.deltaTime + Game.Control.Score_health / 50f * Time.deltaTime;
-        if (timeUntilNextBug > 2f)
+        if (timeUntilNextBug > 2f && canSpawn)
         {
             timeUntilNextBug = 0f;
             var tempR = Random.Range(0, 3);
@@ -86,9 +88,11 @@ public class Minigame03_Control : MonoBehaviour
         yield return new WaitForSeconds(1);
         UI.SetActive(true);
         Game.Control.canControl = true;
+        canSpawn = true;
 
         yield return new WaitForSeconds(30);
         Game.Control.blackin();
+        canSpawn = false;
 
         GameObject[] tempObjs = GameObject.FindGameObjectsWithTag("Pickup_bugs");
         foreach (GameObject tempObj in tempObjs) { Destroy(tempObj.gameObject); }
