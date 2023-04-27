@@ -4,4 +4,6 @@ db:You choose to become a McPotato!
 &wait
 db:Grow harder in the rest of your life!
 &wait
+db:Try your best to get more than 300 water, 85 sunshine and stay above 75 health.
+&wait
 &end

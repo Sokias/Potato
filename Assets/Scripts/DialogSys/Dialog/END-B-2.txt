@@ -1,0 +1,22 @@
+&delay:2
+&db_on
+db:After a period of time...
+&wait
+db:The final potato quality test is over...
+&wait
+db:Although I didn't get to be a McDonald's potato, luckily, I grew up well.
+&wait
+db:I was sure that there must be a place that needed me.
+&wait
+&bg_update:12
+&blackout
+&delay:2
+db:A company called Ubisoft had chosen me.
+&wait
+db:Which confused me because they didn't seem to be a food company...
+&wait
+db:Anyway, whatever, it's good enough to have a job.
+&wait
+&blackin
+&delay:2
+&end

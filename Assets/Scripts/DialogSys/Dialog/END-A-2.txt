@@ -1,0 +1,22 @@
+&delay:2
+&db_on
+db:After a period of time...
+&wait
+db:The final potato quality test is over...
+&wait
+db:I didn't meet the criteria for McDonald's potatoes.
+&wait
+db:And it was a shame to watch my chosen companion get loaded onto the truck.
+&wait
+db:However, it wasn't the end of the story.
+&wait
+&bg_update:15
+&blackout
+&delay:2
+db:I was chosen to be the next seed potato.
+&wait
+db:Maybe one of my children can carry my dream and becoming that glorious McDonald's potato...
+&wait
+&blackin
+&delay:2
+&end

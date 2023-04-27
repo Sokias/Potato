@@ -1,0 +1,24 @@
+&delay:2
+&db_on
+db:After a period of time...
+&wait
+db:The final potato quality test is over...
+&wait
+db:I didn't meet the standard of McDonald's potatoes.
+&wait
+db:I'm ok with that. I didn't want to go anyway.
+&wait
+db:But the truth is, I just grew up too bad...
+&wait
+&bg_update:14
+&blackout
+&delay:2
+db:And nobody wants me.
+&wait
+db:All my companions around me are gone, and I'm the only one left here.
+&wait
+db:Maybe I've been forgotten, maybe I'll just end up rotting in the soil...
+&wait
+&blackin
+&delay:2
+&end

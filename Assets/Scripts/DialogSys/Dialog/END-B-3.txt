@@ -1,0 +1,22 @@
+&delay:2
+&db_on
+db:After a period of time...
+&wait
+db:The final potato quality test is over...
+&wait
+db:In the end, I wasn't chosen to be a McDonald's potato.
+&wait
+db:I wasn't surprised because I didn't look as good as my companions.
+&wait
+&bg_update:11
+&blackout
+&delay:2
+db:Along with some of my companions, we were packed and placed in a supermarket.
+&wait
+db:I know, this is the fate of most potatoes.
+&wait
+db:It's not that shiny and brilliant, but it's still my life.
+&wait
+&blackin
+&delay:2
+&end

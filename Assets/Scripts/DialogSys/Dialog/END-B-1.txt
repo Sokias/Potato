@@ -1,0 +1,28 @@
+&delay:2
+&db_on
+db:After a period of time...
+&wait
+db:The final potato quality test is over...
+&wait
+&bg_update:10
+&blackout
+&delay:2
+db:I have become a McDonald's Potato, fulfilling the dream of old potatoes.
+&wait
+db:I have never considered becoming a McDonald's potato as the only way out in my life.
+&wait
+db:I just went with my nature and made it this far.
+&wait
+db:I was loaded onto a truck with the other selected potatoes, but I'm not happy at all.
+&wait
+db:Seeing my envious companions on the ground, that old potato suddenly appears in my mind.
+&wait
+db:Was he staring at the chosen potatoes like the others?
+&wait
+db:Anyway, I am ready to take the new journey...
+&wait
+db:Yeah, maybe.
+&wait
+&blackin
+&delay:2
+&end

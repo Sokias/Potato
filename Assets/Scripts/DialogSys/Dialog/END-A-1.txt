@@ -1,0 +1,16 @@
+&delay:2
+&db_on
+db:After a period of time...
+&wait
+db:The final potato quality test is over...
+&wait
+&bg_update:10
+&blackout
+&delay:2
+db:I have become a McDonald's Potato, fulfilling the dream of old potatoes and myself.
+&wait
+db:As I was loaded onto the truck with the rest of my chosen companions, a new journey began...
+&wait
+&blackin
+&delay:2
+&end

@@ -1,0 +1,22 @@
+&delay:2
+&db_on
+db:After a period of time...
+&wait
+db:The final potato quality test is over...
+&wait
+db:I didn't meet the criteria for McDonald's potatoes.
+&wait
+db:But this is not the end of my life.
+&wait
+&bg_update:15
+&blackout
+&delay:2
+db:I was chosen to be the next seed potato.
+&wait
+db:I will watch some new potatoes growing up.
+&wait
+db:Hope they will find their dreams in the future.
+&wait
+&blackin
+&delay:2
+&end
