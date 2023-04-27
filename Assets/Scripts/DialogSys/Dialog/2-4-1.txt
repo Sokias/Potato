@@ -17,6 +17,7 @@ d1:The death of the old potatoes made me very sad.
 &wait
 d1:However, since I have made the choice, I should try to make it...
 &wait
+&clear
 &blackin
 &delay:2
 &end

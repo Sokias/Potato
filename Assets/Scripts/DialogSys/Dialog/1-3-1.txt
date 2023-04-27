@@ -32,6 +32,7 @@ d1:Ok, I understand. See you later. I'm going to get some water.
 &wait
 d3:Bye.
 &wait
+&clear
 &blackin
 &delay:2
 &end

@@ -17,6 +17,8 @@ public class Minigame01_Control : MonoBehaviour
 
     float timeUntilNextWater = 0f;
 
+    bool canSpawn = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,7 +34,7 @@ public class Minigame01_Control : MonoBehaviour
         T_water.text = Game.Control.Score_water.ToString();
 
         timeUntilNextWater += Time.deltaTime + Game.Control.Score_water / 10f * Time.deltaTime;
-        if (timeUntilNextWater > 2f)
+        if (timeUntilNextWater > 2f && canSpawn)
         {
             timeUntilNextWater = 0f;
             Instantiate(Water_Prefab,
@@ -69,9 +71,11 @@ public class Minigame01_Control : MonoBehaviour
         yield return new WaitForSeconds(1);
         UI.SetActive(true);
         Game.Control.canControl = true;
+        canSpawn = true;
 
         yield return new WaitForSeconds(30);
         Game.Control.blackin();
+        canSpawn = false;
 
         GameObject[] tempObjs = GameObject.FindGameObjectsWithTag("Pickup_water");
         foreach(GameObject tempObj in tempObjs) { Destroy(tempObj.gameObject); }

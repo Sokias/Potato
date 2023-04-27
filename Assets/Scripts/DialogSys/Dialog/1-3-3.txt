@@ -20,6 +20,7 @@ d3:Don't worry, my friend. This is the life of a potato, and we can't change it.
 &d1_off
 d3:Even if we can't become a McPotato, there will always be a place for us.
 &wait
+&clear
 &blackin
 &delay:2
 &end

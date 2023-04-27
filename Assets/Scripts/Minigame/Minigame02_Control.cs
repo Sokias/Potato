@@ -19,6 +19,8 @@ public class Minigame02_Control : MonoBehaviour
 
     float timeUntilNextplatform = 0f;
 
+    bool canSpawn = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,7 +41,7 @@ public class Minigame02_Control : MonoBehaviour
 
         timeUntilNextplatform += Time.deltaTime + Game.Control.Score_nutrition / 40f * Time.deltaTime;
         float temp = 2.0f;
-        if (timeUntilNextplatform > temp)
+        if (timeUntilNextplatform > temp && canSpawn)
         {
             timeUntilNextplatform = 0f;
             temp = Random.Range(2f, 4f);
@@ -80,9 +82,11 @@ public class Minigame02_Control : MonoBehaviour
         yield return new WaitForSeconds(1);
         UI.SetActive(true);
         Game.Control.canControl = true;
+        canSpawn = true;
 
         yield return new WaitForSeconds(30);
         Game.Control.blackin();
+        canSpawn = false;
 
         GameObject[] tempObjs = GameObject.FindGameObjectsWithTag("platform");
         foreach (GameObject tempObj in tempObjs) { Destroy(tempObj.gameObject); }

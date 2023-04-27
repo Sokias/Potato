@@ -19,6 +19,7 @@ d1:......
 &wait
 d1:Now, where will I go?
 &wait
+&clear
 &blackin
 &delay:2
 &end

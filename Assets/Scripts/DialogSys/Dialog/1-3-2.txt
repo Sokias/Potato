@@ -27,6 +27,7 @@ d3:I'll probably end up in a supermarket like most potatoes, just sitting on a s
 &d1_on
 d1:Ok...
 &wait
+&clear
 &blackin
 &delay:2
 &end
