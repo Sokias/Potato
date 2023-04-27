@@ -1670,44 +1670,7 @@ MonoBehaviour:
   - {fileID: 2013604084}
   - {fileID: 1131742080}
   - {fileID: 1491440919}
-  textList:
-  - '&d2_on'
-  - '&c2_on'
-  - d2:I once had a dream, this dream has been planted when I just sprouted
-  - '&wait'
-  - d2:when my potato predecessor told me that the ultimate goal of our potato birth
-    is to pass the potato quality test to become the best McDonald's potatoes...
-  - '&wait'
-  - d2:In the end I failed to fulfill that wish
-  - '&wait'
-  - d2:but you still can carry my dream to become the chosen potato.
-  - '&wait'
-  - '&d2_off'
-  - '&c2_off'
-  - '&db_on'
-  - db:(TODO-Explain the game system and the conditions to become a MCDONALD POTATO)
-  - '&wait'
-  - db:(TODO-Add first mini-game)
-  - '&wait'
-  - '&db_off'
-  - '&d2_on'
-  - '&c2_on'
-  - d2:How about that? Do you have any questions?
-  - '&wait'
-  - '&c1_on'
-  - c1:Why do you want to become a McDonald's potato?
-  - c2:How to become a McDonald's potato?
-  - c3:I have no more questions.
-  - '&choice_on'
-  - d2_choice_ans:[NO_ANS_0]:Becoming a McDonald's potato is the ultimate goal of
-    the potatoes.:You need to work hard to collect water and nutrients in the following
-    days, make yourself big enough and keep your appearance smooth and full enough:Good.
-  - '&wait'
-  - d2_choice_ans:[NO_ANS_0]:This is a representation of the highest standards of
-    quality.:Then finally pass the potato quality test to be selected as a glorious
-    McDonald's potato.:(Old potato smiled)
-  - '&wait'
-  - '&end'
+  textList: []
 --- !u!1 &6177067920293247468
 GameObject:
   m_ObjectHideFlags: 0
@@ -1912,7 +1875,7 @@ MonoBehaviour:
   m_text: (TODO-Add first mini-game)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 66c2c40ff0fea46269bca65154f5654e, type: 2}
-  m_sharedMaterial: {fileID: 8395693791342650677, guid: e7c726bc75fbe4fb48f2192ee0efcfa4, type: 2}
+  m_sharedMaterial: {fileID: -5315848075824255774, guid: 66c2c40ff0fea46269bca65154f5654e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1975,6 +1938,6 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}

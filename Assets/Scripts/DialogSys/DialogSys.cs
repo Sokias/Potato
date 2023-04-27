@@ -31,6 +31,7 @@ public class DialogSys : MonoBehaviour
     public List<string> textList = new List<string>();
     bool choiceON = false;
     int currentChoice = 0;
+    
 
     private void OnEnable()
     {
@@ -213,6 +214,7 @@ public class DialogSys : MonoBehaviour
                 break;
             case "&end": //on windows change it to &en
                 dialogEnd();
+                //Debug.Log("End");
                 //gameObject.SetActive(false);
                 break;
             case "&clear":
@@ -286,6 +288,12 @@ public class DialogSys : MonoBehaviour
                 {
                     case "&bg_update":
                         Game.Control.updateBG(int.Parse(line[1]));
+                        if (int.Parse(line[1]) > 9)
+                        {
+                            DialogB.GetComponent<Image>().sprite = null;
+                            DialogB.GetComponent<Image>().color = new Color32(0, 0, 0, 150);
+                            textLabelB.GetComponent<TMP_Text>().color = new Color32(255, 255, 255, 255);
+                        }
                         break;
                     case "&delay":
                         status = true;
@@ -367,6 +375,7 @@ public class DialogSys : MonoBehaviour
 
     void clearAll()
     {
+        //textList.Clear();
         Character1.SetActive(false);
         Character2.SetActive(false);
         Character3.SetActive(false);
@@ -382,6 +391,7 @@ public class DialogSys : MonoBehaviour
         yield return new WaitForSeconds(time);
 
         index++;
+        //status = false;
         displayNext();
     }
 

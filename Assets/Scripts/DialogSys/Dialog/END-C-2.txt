@@ -1,3 +1,4 @@
+&bg_update:1
 &delay:2
 &db_on
 db:After a period of time...
@@ -6,6 +7,8 @@ db:The final potato quality test is over...
 &wait
 db:In the end, I wasn't chosen to be a McDonald's potato.
 &wait
+&blackin
+&delay:1
 &bg_update:11
 &blackout
 &delay:2

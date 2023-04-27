@@ -1,3 +1,4 @@
+&bg_update:1
 &delay:2
 &db_on
 db:After a period of time...
@@ -6,10 +7,12 @@ db:The final potato quality test is over...
 &wait
 db:I didn't meet the criteria for McDonald's potatoes.
 &wait
-db:And it was a shame to watch my chosen companion get loaded onto the truck.
+db:I feel so sad watching my chosen companion get loaded onto the truck.
 &wait
 db:However, it wasn't the end of the story.
 &wait
+&blackin
+&delay:1
 &bg_update:15
 &blackout
 &delay:2

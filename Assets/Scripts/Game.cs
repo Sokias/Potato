@@ -38,7 +38,6 @@ public class Game : MonoBehaviour
     public GameObject oldPotatoDialog;
     public Sprite oldoldPotatoDialog;
 
-
     private void Awake()
     {
         Control = this;
@@ -49,7 +48,7 @@ public class Game : MonoBehaviour
         startDialog("0-1");
 
         //test
-        //startDialog("END-B-2");
+        //startDialog("END-0");
         //startGame("1-1-2G", 2);
     }
 
@@ -193,62 +192,82 @@ public class Game : MonoBehaviour
                         if (Score_water >= 300 && Score_nutrition >= 85 && Score_health >= 75)
                         {
                             startDialog("END-A-1");
-                            break;
                         }
-                        if (Score_water >= 280 && Score_nutrition >= 80 && Score_health >= 70)
+                        else
                         {
-                            startDialog("END-A-2");
-                            break;
+                            if (Score_water >= 280 && Score_nutrition >= 80 && Score_health >= 70)
+                            {
+                                startDialog("END-A-2");
+                            }
+                            else
+                            {
+                                if (Score_water >= 200 && Score_health >= 60)
+                                {
+                                    startDialog("END-A-3");
+                                }
+                                else
+                                {
+                                    startDialog("END-A-4");
+                                }
+                            }
                         }
-                        if (Score_water >= 200 && Score_health >= 60)
-                        {
-                            startDialog("END-A-3");
-                            break;
-                        }
-                        startDialog("END-A-4");
                         break;
 
                     case 2:
                         if (Score_water >= 300 && Score_nutrition >= 85 && Score_health >= 75)
                         {
                             startDialog("END-B-1");
-                            break;
                         }
-                        if (Score_water >= 280 && Score_nutrition >= 80 && Score_health >= 70)
+                        else
                         {
-                            startDialog("END-B-2");
-                            break;
+                            if (Score_water >= 280 && Score_nutrition >= 80 && Score_health >= 70)
+                            {
+                                startDialog("END-B-2");
+                            }
+                            else
+                            {
+                                if (Score_water >= 250 && Score_nutrition >= 80 && Score_health >= 65)
+                                {
+                                    startDialog("END-B-3");
+                                }
+                                else
+                                {
+                                    if (Score_water >= 200 && Score_health >= 60)
+                                    {
+                                        startDialog("END-B-4");
+                                    }
+                                    else
+                                    {
+                                        startDialog("END-B-5");
+                                    }
+                                }
+                            }
                         }
-                        if (Score_water >= 250 && Score_nutrition >= 80 && Score_health >= 65)
-                        {
-                            startDialog("END-B-3");
-                            break;
-                        }
-                        if (Score_water >= 200 && Score_health >= 60)
-                        {
-                            startDialog("END-B-4");
-                            break;
-                        }
-                        startDialog("END-B-5");
                         break;
 
                     case 3:
                         if (Score_water >= 280 && Score_nutrition >= 85 && Score_health >= 70)
                         {
                             startDialog("END-C-1");
-                            break;
                         }
-                        if (Score_water >= 250 && Score_nutrition >= 80 && Score_health >= 65)
+                        else
                         {
-                            startDialog("END-C-2");
-                            break;
+                            if (Score_water >= 250 && Score_nutrition >= 80 && Score_health >= 65)
+                            {
+                                startDialog("END-C-2");
+                            }
+                            else
+                            {
+                                if (Score_water >= 230 && Score_health >= 60)
+                                {
+                                    startDialog("END-C-3");
+                                }
+                                else
+                                {
+                                    startDialog("END-C-4");
+                                }
+                            }
                         }
-                        if (Score_water >= 230 && Score_health >= 60)
-                        {
-                            startDialog("END-C-3");
-                            break;
-                        }
-                        startDialog("END-C-4");
                         break;
 
                     default:

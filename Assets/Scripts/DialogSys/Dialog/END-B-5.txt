@@ -1,3 +1,4 @@
+&bg_update:1
 &delay:2
 &db_on
 db:After a period of time...
@@ -8,6 +9,8 @@ db:And I wasn't even taken to the test.
 &wait
 db:I know, I don't grow well at all.
 &wait
+&blackin
+&delay:1
 &bg_update:13
 &blackout
 &delay:2

@@ -1,9 +1,12 @@
+&bg_update:1
 &delay:2
 &db_on
 db:After a period of time...
 &wait
 db:The final potato quality test is over...
 &wait
+&blackin
+&delay:1
 &bg_update:10
 &blackout
 &delay:2

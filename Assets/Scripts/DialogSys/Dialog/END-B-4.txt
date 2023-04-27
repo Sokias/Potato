@@ -1,3 +1,4 @@
+&bg_update:1
 &delay:2
 &db_on
 db:After a period of time...
@@ -10,6 +11,8 @@ db:I'm ok with that. I didn't want to go anyway.
 &wait
 db:But the truth is, I just grew up too bad...
 &wait
+&blackin
+&delay:1
 &bg_update:14
 &blackout
 &delay:2

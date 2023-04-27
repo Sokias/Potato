@@ -1,3 +1,4 @@
+&bg_update:1
 &delay:2
 &db_on
 db:After a period of time...
@@ -8,6 +9,8 @@ db:Although I didn't get to be a McDonald's potato, luckily, I grew up well.
 &wait
 db:I was sure that there must be a place that needed me.
 &wait
+&blackin
+&delay:1
 &bg_update:12
 &blackout
 &delay:2
