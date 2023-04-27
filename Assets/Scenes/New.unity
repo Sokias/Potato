@@ -1137,18 +1137,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1349526300}
     m_Modifications:
-    - target: {fileID: 284932422, guid: a35b92160f87d724aab3225c272b6e20, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1317379475, guid: a35b92160f87d724aab3225c272b6e20, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1591835197, guid: a35b92160f87d724aab3225c272b6e20, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4332735256954509056, guid: a35b92160f87d724aab3225c272b6e20, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -5107,6 +5095,12 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a669d656ae9cb4bb1a0ba72718947c91, type: 3}
   - {fileID: 21300000, guid: b19db92bec5a743098fd3de9962fac79, type: 3}
   - {fileID: 21300000, guid: 49365a44f1caa44eea3a4bf8fe65fff9, type: 3}
+  - {fileID: 21300000, guid: 3043609c569f6495db61de9f8183780e, type: 3}
+  - {fileID: 21300000, guid: a3baedce1f1b34d3ca28ba8a4e9ffbf6, type: 3}
+  - {fileID: 21300000, guid: b180fa6e1a8be4106824a7336a01d84a, type: 3}
+  - {fileID: 21300000, guid: f83847841e36d4f9580633db7e94b3b3, type: 3}
+  - {fileID: 21300000, guid: 4e445c84aee8d488db7122ce227d22b7, type: 3}
+  - {fileID: 21300000, guid: 1b11de457972746158e27f0dcb838210, type: 3}
   blackScreen: {fileID: 428073332}
   oldPotato: {fileID: 544953525}
   oldoldPotato: {fileID: 21300000, guid: 800832dd5514242bbbebfdcfa8b1aaa5, type: 3}

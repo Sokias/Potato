@@ -7,7 +7,7 @@ using TMPro;
 public class DialogSys : MonoBehaviour
 {
     [Header("TextFiles")]
-    public TextAsset[] textFile = new TextAsset[19];
+    public TextAsset[] textFile = new TextAsset[31];
 
     [Header("TextObjects")]
     public TMP_Text textLabel1;
@@ -143,6 +143,46 @@ public class DialogSys : MonoBehaviour
             case "END-0":
                 currentTextFile = textFile[18];
                 break;
+            case "END-A-1":
+                currentTextFile = textFile[19];
+                break;
+            case "END-A-2":
+                currentTextFile = textFile[20];
+                break;
+            case "END-A-3":
+                currentTextFile = textFile[21];
+                break;
+            case "END-A-4":
+                currentTextFile = textFile[22];
+                break;
+            case "END-B-1":
+                currentTextFile = textFile[23];
+                break;
+            case "END-B-2":
+                currentTextFile = textFile[24];
+                break;
+            case "END-B-3":
+                currentTextFile = textFile[25];
+                break;
+            case "END-B-4":
+                currentTextFile = textFile[26];
+                break;
+            case "END-B-5":
+                currentTextFile = textFile[27];
+                break;
+            case "END-C-1":
+                currentTextFile = textFile[28];
+                break;
+            case "END-C-2":
+                currentTextFile = textFile[29];
+                break;
+            case "END-C-3":
+                currentTextFile = textFile[30];
+                break;
+            case "END-C-4":
+                currentTextFile = textFile[31];
+                break;
+
 
             default:
                 break;

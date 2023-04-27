@@ -214,7 +214,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &348389675
@@ -637,7 +637,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1426784577
@@ -924,7 +924,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &2013604084
@@ -1638,6 +1638,19 @@ MonoBehaviour:
   - {fileID: 4900000, guid: 7987ee3e6a3ae4e4499b35cd1cae2b9e, type: 3}
   - {fileID: 4900000, guid: c546ecff838cc41e0afb145ecff161c4, type: 3}
   - {fileID: 4900000, guid: 9055e39a266c040029776859afdfdf54, type: 3}
+  - {fileID: 4900000, guid: a8884c1e6ada646aa9efb0b11b5b0b4e, type: 3}
+  - {fileID: 4900000, guid: 031e2c9fddc294762a9665c3bc2edd39, type: 3}
+  - {fileID: 4900000, guid: 9bbe9b094835e4ea78f7dc44e821f347, type: 3}
+  - {fileID: 4900000, guid: 823c8ef3faa58433a9eefc35ca449d0b, type: 3}
+  - {fileID: 4900000, guid: 8c73482e0a270470099cedad0953a4a5, type: 3}
+  - {fileID: 4900000, guid: 97829d00935e0470a83f0ff733c01393, type: 3}
+  - {fileID: 4900000, guid: e08d35ea8ac914b03a6f3b91ab32da2e, type: 3}
+  - {fileID: 4900000, guid: eb5ace03d7c8d47c9a1d500ff13ed323, type: 3}
+  - {fileID: 4900000, guid: 62af0ac043493495c991b24376e87678, type: 3}
+  - {fileID: 4900000, guid: 98f7d33f36cad42678e08b771dfd2484, type: 3}
+  - {fileID: 4900000, guid: e79d84f0119fc4eaab0c66b1dc24a894, type: 3}
+  - {fileID: 4900000, guid: 860a56e8c784f4cb7b6864fa1b4d8b51, type: 3}
+  - {fileID: 4900000, guid: 49c981a03afca4d688d672950fa5b7f0, type: 3}
   textLabel1: {fileID: 1080296554486041704}
   textLabel2: {fileID: 4329612030074813430}
   textLabel3: {fileID: 348389677}

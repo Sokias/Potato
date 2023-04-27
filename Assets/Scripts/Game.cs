@@ -49,7 +49,7 @@ public class Game : MonoBehaviour
         startDialog("0-1");
 
         //test
-        //startDialog("2-2");
+        //startDialog("END-B-2");
         //startGame("1-1-2G", 2);
     }
 
@@ -184,6 +184,77 @@ public class Game : MonoBehaviour
 
             case "2-4-5G":
                 startDialog("END-0");
+                break;
+
+            case "END-0":
+                switch (savedAnswer)
+                {
+                    case 1:
+                        if (Score_water >= 300 && Score_nutrition >= 85 && Score_health >= 75)
+                        {
+                            startDialog("END-A-1");
+                            break;
+                        }
+                        if (Score_water >= 280 && Score_nutrition >= 80 && Score_health >= 70)
+                        {
+                            startDialog("END-A-2");
+                            break;
+                        }
+                        if (Score_water >= 200 && Score_health >= 60)
+                        {
+                            startDialog("END-A-3");
+                            break;
+                        }
+                        startDialog("END-A-4");
+                        break;
+
+                    case 2:
+                        if (Score_water >= 300 && Score_nutrition >= 85 && Score_health >= 75)
+                        {
+                            startDialog("END-B-1");
+                            break;
+                        }
+                        if (Score_water >= 280 && Score_nutrition >= 80 && Score_health >= 70)
+                        {
+                            startDialog("END-B-2");
+                            break;
+                        }
+                        if (Score_water >= 250 && Score_nutrition >= 80 && Score_health >= 65)
+                        {
+                            startDialog("END-B-3");
+                            break;
+                        }
+                        if (Score_water >= 200 && Score_health >= 60)
+                        {
+                            startDialog("END-B-4");
+                            break;
+                        }
+                        startDialog("END-B-5");
+                        break;
+
+                    case 3:
+                        if (Score_water >= 280 && Score_nutrition >= 85 && Score_health >= 70)
+                        {
+                            startDialog("END-C-1");
+                            break;
+                        }
+                        if (Score_water >= 250 && Score_nutrition >= 80 && Score_health >= 65)
+                        {
+                            startDialog("END-C-2");
+                            break;
+                        }
+                        if (Score_water >= 230 && Score_health >= 60)
+                        {
+                            startDialog("END-C-3");
+                            break;
+                        }
+                        startDialog("END-C-4");
+                        break;
+
+                    default:
+                        Debug.Log("ERROR_Not_valid_saved_choice");
+                        break;
+                }
                 break;
 
             default:
