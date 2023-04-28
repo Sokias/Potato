@@ -281,6 +281,9 @@ public class DialogSys : MonoBehaviour
             case "&oldpotato":
                 Game.Control.potato_old();
                 break;
+            case "&bgm_off":
+                Game.Control.noBGM();
+                break;
 
             default:
                 var line = textList[index].Split(':');
@@ -294,6 +297,9 @@ public class DialogSys : MonoBehaviour
                             DialogB.GetComponent<Image>().color = new Color32(0, 0, 0, 150);
                             textLabelB.GetComponent<TMP_Text>().color = new Color32(255, 255, 255, 255);
                         }
+                        break;
+                    case "&bgm":
+                        Game.Control.updateBGM(int.Parse(line[1]));
                         break;
                     case "&delay":
                         status = true;

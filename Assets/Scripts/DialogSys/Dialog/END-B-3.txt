@@ -10,6 +10,7 @@ db:In the end, I wasn't chosen to be a McDonald's potato.
 db:I wasn't surprised because I didn't look as good as my companions.
 &wait
 &blackin
+&bgm:6
 &delay:1
 &bg_update:11
 &blackout

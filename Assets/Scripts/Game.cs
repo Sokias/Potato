@@ -38,9 +38,14 @@ public class Game : MonoBehaviour
     public GameObject oldPotatoDialog;
     public Sprite oldoldPotatoDialog;
 
+    [Header("BGMPlayer")]
+    AudioSource BGM;
+    public AudioClip[] BGMList = new AudioClip[6];
+
     private void Awake()
     {
         Control = this;
+        BGM = GetComponent<AudioSource>();
     }
 
     private void Start()
@@ -300,6 +305,41 @@ public class Game : MonoBehaviour
     public void updateBG(int bg_index)
     {
         background.GetComponent<SpriteRenderer>().sprite = backgroundSprite[bg_index-1];
+    }
+
+    public void updateBGM(int bgm_index)
+    {
+        StartCoroutine(Weak(BGM, bgm_index));
+    }
+
+    public void noBGM()
+    {
+        StartCoroutine(NoBGM(BGM));
+    }
+
+    IEnumerator Weak(AudioSource bgm, int index)
+    {
+        while (bgm.volume > 0.02f)
+        {
+            bgm.volume -= 0.01f;
+            yield return new WaitForSeconds(0.02f);
+        } 
+        bgm.clip = BGMList[index - 1]; 
+        bgm.Play(); // or it won't play
+        while (bgm.volume < 1f)
+        {
+            bgm.volume += 0.01f;
+            yield return new WaitForSeconds(0.02f);
+        }
+    }
+
+    IEnumerator NoBGM(AudioSource bgm)
+    {
+        while (bgm.volume > 0.01f)
+        {
+            bgm.volume -= 0.01f;
+            yield return new WaitForSeconds(0.02f);
+        }
     }
 
     public void blackin()

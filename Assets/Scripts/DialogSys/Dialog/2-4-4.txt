@@ -1,3 +1,4 @@
+&bgm:2
 &delay:1
 &blackout
 &delay:2
@@ -34,6 +35,7 @@ c3:I don't think you have enough time...
 &choice_on
 d3:Anyway, I'll try my best.
 &wait
+&bgm:4
 &clear
 &blackin
 &delay:2

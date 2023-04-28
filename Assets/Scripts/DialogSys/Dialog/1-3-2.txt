@@ -1,3 +1,4 @@
+&bgm:1
 &delay:1
 &blackout
 &delay:2
@@ -27,6 +28,7 @@ d3:I'll probably end up in a supermarket like most potatoes, just sitting on a s
 &d1_on
 d1:Ok...
 &wait
+&bgm:3
 &clear
 &blackin
 &delay:2

@@ -11,6 +11,7 @@ db:I feel so sad watching my chosen companion get loaded onto the truck.
 &wait
 db:However, it wasn't the end of the story.
 &wait
+&bgm:5
 &blackin
 &delay:1
 &bg_update:15

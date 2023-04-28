@@ -1,3 +1,4 @@
+&bgm:1
 &delay:1
 &bg_update:3
 &blackout
@@ -27,6 +28,7 @@ db:Stay in the sunshine to get the nutrition!
 &wait
 db:Ready? Let's go!
 &wait
+&bgm:3
 &blackin
 &delay:2
 &end

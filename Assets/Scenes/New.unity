@@ -5107,6 +5107,13 @@ MonoBehaviour:
   oldoldPotato: {fileID: 21300000, guid: 800832dd5514242bbbebfdcfa8b1aaa5, type: 3}
   oldPotatoDialog: {fileID: 900325686}
   oldoldPotatoDialog: {fileID: 21300000, guid: ce9e725b05083411f8d7f38a51f4e624, type: 3}
+  BGMList:
+  - {fileID: 8300000, guid: acb897ec270904f66bc0a6ed4ff3aed8, type: 3}
+  - {fileID: 8300000, guid: 053546f5884c9408cb7498ede411234f, type: 3}
+  - {fileID: 8300000, guid: d9be5efc344da45aca8bd20c8450fe19, type: 3}
+  - {fileID: 8300000, guid: 06bf284d5399a4365902e6b1848c80d1, type: 3}
+  - {fileID: 8300000, guid: 696b3324b3e9c49dcb424a7555587499, type: 3}
+  - {fileID: 8300000, guid: d35f99a9ce76244aab0e86a53dd901ce, type: 3}
 --- !u!4 &2143486838
 Transform:
   m_ObjectHideFlags: 0
@@ -5132,7 +5139,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 3615f71958f348c46bca33335427c684, type: 3}
+  m_audioClip: {fileID: 8300000, guid: acb897ec270904f66bc0a6ed4ff3aed8, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

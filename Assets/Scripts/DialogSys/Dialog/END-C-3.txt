@@ -14,6 +14,7 @@ db:After all, I never really thought about where I wanted to go.
 db:But the truth is, I just grew up too bad...
 &wait
 &blackin
+&bgm:5
 &delay:1
 &bg_update:14
 &blackout

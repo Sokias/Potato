@@ -10,6 +10,7 @@ db:I didn't meet the criteria for McDonald's potatoes.
 db:But this is not the end of my life.
 &wait
 &blackin
+&bgm:5
 &delay:1
 &bg_update:15
 &blackout

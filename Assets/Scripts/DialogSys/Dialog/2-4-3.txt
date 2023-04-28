@@ -1,3 +1,4 @@
+&bgm:2
 &bg_update:8
 &delay:1
 &blackout
@@ -7,6 +8,7 @@ db:After a period of time...
 &wait
 db:Another rainy day...
 &wait
+&bgm:4
 &blackin
 &delay:2
 &end

@@ -1,3 +1,4 @@
+&bgm:1
 &delay:1
 &bg_update:5
 &blackout
@@ -44,6 +45,7 @@ db:Protect yourself from the bugs that move around!
 &wait
 db:Now ready...
 &wait
+&bgm:4
 &blackin
 &delay:2
 &end

@@ -1,3 +1,4 @@
+&bgm:2
 &delay:1
 &oldpotato
 &blackout

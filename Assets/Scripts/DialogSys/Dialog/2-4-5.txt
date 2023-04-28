@@ -1,3 +1,4 @@
+&bgm:2
 &bg_update:9
 &delay:1
 &blackout
@@ -9,6 +10,7 @@ db:They say it's almost harvest season.
 &wait
 db:It's almost over, but don't relax until the end.
 &wait
+&bgm:4
 &blackin
 &delay:2
 &end

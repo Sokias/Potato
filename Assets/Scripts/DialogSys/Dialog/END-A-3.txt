@@ -9,6 +9,7 @@ db:I didn't meet the standard of McDonald's potatoes.
 &wait
 db:I was lost and didn't know how to face my future.
 &wait
+&bgm:5
 &blackin
 &delay:1
 &bg_update:14

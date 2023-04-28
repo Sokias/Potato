@@ -8,6 +8,7 @@ db:The final potato quality test is over...
 db:In the end, I wasn't chosen to be a McDonald's potato.
 &wait
 &blackin
+&bgm:6
 &delay:1
 &bg_update:11
 &blackout

@@ -1,3 +1,4 @@
+&bgm:2
 &delay:1
 &blackout
 &delay:2
@@ -6,6 +7,7 @@ db:After a period of time...
 &wait
 db:Be careful of bugs...
 &wait
+&bgm:4
 &blackin
 &delay:2
 &end

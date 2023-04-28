@@ -6,6 +6,7 @@ db:After a period of time...
 db:The final potato quality test is over...
 &wait
 &blackin
+&bgm:5
 &delay:1
 &bg_update:10
 &blackout

@@ -11,6 +11,7 @@ db:I'm ok with that. I didn't want to go anyway.
 &wait
 db:But the truth is, I just grew up too bad...
 &wait
+&bgm:5
 &blackin
 &delay:1
 &bg_update:14

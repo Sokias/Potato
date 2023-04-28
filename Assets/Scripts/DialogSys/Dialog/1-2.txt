@@ -1,3 +1,4 @@
+&bgm:1
 &delay:1
 &bg_update:4
 &blackout
@@ -10,6 +11,7 @@ d2:Since it's the first time, I'll say you're doing great.
 &wait
 d2:Do you have any more questions?
 &wait
+d2:(Use [W/S/↑/↓] to choose, [Space] to confirm)
 &c1_on
 c1:Why do you want to become a McDonald's potato?
 c2:How to become a McDonald's potato?

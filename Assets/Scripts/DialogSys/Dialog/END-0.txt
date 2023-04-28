@@ -1,3 +1,4 @@
+&bgm:2
 &delay:1
 &blackout
 &delay:2
@@ -19,6 +20,7 @@ d1:......
 &wait
 d1:Now, where will I go?
 &wait
+&bgm_off
 &clear
 &blackin
 &delay:2

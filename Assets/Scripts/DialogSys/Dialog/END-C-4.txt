@@ -14,6 +14,7 @@ db:I've never really thought about my goals.
 db:So it seems normal to not start working on it at all.
 &wait
 &blackin
+&bgm:5
 &delay:1
 &bg_update:13
 &blackout
