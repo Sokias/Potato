@@ -322,14 +322,14 @@ public class Game : MonoBehaviour
         while (bgm.volume > 0.02f)
         {
             bgm.volume -= 0.01f;
-            yield return new WaitForSeconds(0.02f);
+            yield return new WaitForSeconds(0.01f);
         } 
         bgm.clip = BGMList[index - 1]; 
         bgm.Play(); // or it won't play
         while (bgm.volume < 1f)
         {
             bgm.volume += 0.01f;
-            yield return new WaitForSeconds(0.02f);
+            yield return new WaitForSeconds(0.01f);
         }
     }
 
