@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2455034732701247116}
   - component: {fileID: 2455034732701247117}
   - component: {fileID: 6630852079873759213}
+  - component: {fileID: 2286942800488062789}
   m_Layer: 3
   m_Name: PlatformL
   m_TagString: platform
@@ -34,7 +35,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2455034732701247113
 SpriteRenderer:
@@ -77,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: -1829703401
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 96e84ab5fa75045eea3b90eb0d792f5f, type: 3}
+  m_Sprite: {fileID: -722127069, guid: 6e65887e53061bd41bbe25437a53f0d4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -115,7 +116,7 @@ MonoBehaviour:
   - {x: -0.50527954, y: 0.018452585, z: 0}
   m_ShapePathHash: 962772727
   m_Mesh: {fileID: 0}
-  m_InstanceId: -46994
+  m_InstanceId: -22680
 --- !u!50 &2455034732701247116
 Rigidbody2D:
   serializedVersion: 4
@@ -225,3 +226,23 @@ PolygonCollider2D:
       - {x: 0.315, y: -0.17}
       - {x: 0.515, y: -0.17}
   m_UseDelaunayMesh: 0
+--- !u!95 &2286942800488062789
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2455034732701247159}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 568dcf6d19ab66545b3c6d6c40cd8f53, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0

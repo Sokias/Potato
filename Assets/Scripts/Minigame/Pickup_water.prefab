@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1951966536092249282}
   - component: {fileID: 7327823784592899593}
   - component: {fileID: 3193476239339121568}
+  - component: {fileID: 122326778}
   m_Layer: 0
   m_Name: Pickup_water
   m_TagString: Pickup_water
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b134646b21e6a49fe8f389828ee62d3b, type: 3}
+  m_Sprite: {fileID: -767199815, guid: d28d7a09b8ee2624c903be8c3ec345fc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -179,3 +180,23 @@ PolygonCollider2D:
       - {x: 0.13, y: 0.11}
       - {x: 0.099999994, y: 0.13}
   m_UseDelaunayMesh: 0
+--- !u!95 &122326778
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1951966536092249286}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2b16d25ca4ce0804b8eb72d7618c0154, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
