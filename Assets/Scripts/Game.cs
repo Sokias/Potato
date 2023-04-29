@@ -37,6 +37,7 @@ public class Game : MonoBehaviour
     public Sprite oldoldPotato;
     public GameObject oldPotatoDialog;
     public Sprite oldoldPotatoDialog;
+    public GameObject ending;
 
     [Header("BGMPlayer")]
     AudioSource BGM;
@@ -279,6 +280,22 @@ public class Game : MonoBehaviour
                         Debug.Log("ERROR_Not_valid_saved_choice");
                         break;
                 }
+                break;
+
+            case "END-A-1":
+            case "END-A-2":
+            case "END-A-3":
+            case "END-A-4":
+            case "END-B-1":
+            case "END-B-2":
+            case "END-B-3":
+            case "END-B-4":
+            case "END-B-5":
+            case "END-C-1":
+            case "END-C-2":
+            case "END-C-3":
+            case "END-C-4":
+                ending.SetActive(true);
                 break;
 
             default:
